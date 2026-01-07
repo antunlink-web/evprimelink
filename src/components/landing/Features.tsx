@@ -1,4 +1,4 @@
-import { Zap, Wrench, Building2, Clock } from 'lucide-react';
+import { Zap, Plug, Briefcase } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 const Features = () => {
@@ -7,54 +7,35 @@ const Features = () => {
   const features = [
     {
       icon: Zap,
-      title: t('Brzo punjenje', 'Fast Charging'),
-      description: t(
-        'DC punjači do 360kW za minimalno vrijeme punjenja',
-        'DC chargers up to 360kW for minimal charging time'
-      ),
+      title: t('Brzo i praktično punjenje', 'Fast and Convenient Charging'),
     },
     {
-      icon: Wrench,
-      title: t('Ključ u ruke', 'Turnkey Solutions'),
-      description: t(
-        'Kompletna instalacija i održavanje uključeno',
-        'Complete installation and maintenance included'
-      ),
+      icon: Plug,
+      title: t('Ugradnja punionica ključ u ruke', 'Turnkey Charging Station Installation'),
     },
     {
-      icon: Building2,
-      title: t('Poslovna rješenja', 'Business Solutions'),
-      description: t(
-        'Prilagođena rješenja za tvrtke i javnu infrastrukturu',
-        'Customized solutions for businesses and public infrastructure'
-      ),
-    },
-    {
-      icon: Clock,
-      title: t('24/7 Podrška', '24/7 Support'),
-      description: t(
-        'Tehnička podrška dostupna non-stop',
-        'Technical support available around the clock'
-      ),
+      icon: Briefcase,
+      title: t('Poslovni portal za vaš vozni park', 'Business Portal for Your Fleet'),
     },
   ];
 
   return (
     <section className="py-8 -mt-8 relative z-20">
       <div className="container mx-auto px-4">
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          {features.map((feature, index) => (
-            <div
-              key={index}
-              className="bg-card rounded-xl p-6 shadow-lg border border-border hover:shadow-xl hover:border-primary/20 transition-all group"
-            >
-              <div className="w-12 h-12 rounded-lg gradient-primary flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                <feature.icon size={24} className="text-primary-foreground" />
+        <div className="bg-card rounded-2xl shadow-xl border border-border p-6 md:p-8">
+          <div className="grid md:grid-cols-3 gap-6 md:gap-8">
+            {features.map((feature, index) => (
+              <div
+                key={index}
+                className="flex items-center gap-4"
+              >
+                <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+                  <feature.icon size={28} className="text-primary" />
+                </div>
+                <h3 className="font-semibold text-foreground text-lg leading-tight">{feature.title}</h3>
               </div>
-              <h3 className="font-semibold text-foreground mb-2">{feature.title}</h3>
-              <p className="text-sm text-muted-foreground">{feature.description}</p>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>
