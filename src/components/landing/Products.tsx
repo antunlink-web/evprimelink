@@ -49,7 +49,7 @@ const Products = () => {
         features: ['CCS2 + CHAdeMO', t('Modularni dizajn', 'Modular design'), 'OCPP 1.6J/2.0'],
       },
       {
-        name: 'Primelink DC 80kW Стрим EC.A',
+        name: 'Primelink DC 80kW Stream EC.A',
         power: '80 kW',
         image: bfStreamEca,
         description: t(
@@ -69,7 +69,7 @@ const Products = () => {
         features: ['CCS2 + CHAdeMO + GB/T', t('Visoka snaga', 'High power'), t('Brzo punjenje', 'Fast charging')],
       },
       {
-        name: 'Primelink DC 40-60kW Стрим EC.W',
+        name: 'Primelink DC 40-60kW Stream EC.W',
         power: '40-60 kW',
         image: bfStreamEcw,
         description: t(
@@ -131,7 +131,7 @@ const Products = () => {
         features: [t('Dual priključak', 'Dual connector'), 'Type 2', t('LED indikator', 'LED indicator')],
       },
       {
-        name: 'Primelink AC 22-44kW Стрим Кулон',
+        name: 'Primelink AC 22-44kW Stream Coulomb',
         power: '22-44 kW',
         image: bfStreamCoulomb,
         description: t(
@@ -141,7 +141,7 @@ const Products = () => {
         features: [t('Dual priključak', 'Dual connector'), 'Type 2 + GB/T AC', 'OCPP protokol'],
       },
       {
-        name: 'Primelink AC 7-22kW Стрим Hub',
+        name: 'Primelink AC 7-22kW Stream Hub',
         power: '7-22 kW',
         image: bfStreamHub,
         description: t(
