@@ -71,7 +71,7 @@ const Footer = () => {
         {/* Bottom */}
         <div className="pt-8 border-t border-background/20 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-background/60 text-sm">
-            © 2025 Primelink. {t('Sva prava pridržana.', 'All rights reserved.')}
+            © 2026 Primelink. {t('Sva prava pridržana.', 'All rights reserved.')}
           </p>
           <div className="flex gap-6 text-sm">
             <a href="#" className="text-background/60 hover:text-background transition-colors">
