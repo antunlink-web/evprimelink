@@ -46,7 +46,7 @@ const Hero = () => {
                   <ArrowRight size={18} />
                 </a>
               </Button>
-              <Button size="lg" variant="outline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10" asChild>
+              <Button size="lg" variant="outline" className="border-primary-foreground/30 text-foreground bg-primary-foreground hover:bg-primary-foreground/90" asChild>
                 <a href="#contact">
                   {t('Kontaktirajte nas', 'Contact Us')}
                 </a>
