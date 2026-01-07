@@ -34,8 +34,8 @@ const Hero = () => {
 
             <p className="text-lg md:text-xl text-primary-foreground/80 mb-8 max-w-lg">
               {t(
-                'Profesionalna rješenja za punjenje električnih vozila. AC i DC punjači za dom, tvrtke i javnu infrastrukturu.',
-                'Professional electric vehicle charging solutions. AC and DC chargers for home, business, and public infrastructure.'
+                'AC i DC punjači za tvrtke, javnu infrastrukturu i dom.',
+                'AC and DC chargers for business, public infrastructure, and home.'
               )}
             </p>
 
