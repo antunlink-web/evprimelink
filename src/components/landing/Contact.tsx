@@ -34,17 +34,20 @@ const Contact = () => {
     {
       icon: Phone,
       label: t('Telefon', 'Phone'),
-      value: '+385 1 234 5678',
+      value: '+385 99 326 1222',
+      href: 'tel:+385993261222',
     },
     {
       icon: Mail,
       label: 'Email',
       value: 'primelink@primelink.hr',
+      href: 'mailto:primelink@primelink.hr',
     },
     {
       icon: MapPin,
       label: t('Adresa', 'Address'),
       value: 'Zagreb, Hrvatska',
+      href: undefined,
     },
   ];
 
@@ -122,7 +125,13 @@ const Contact = () => {
                   </div>
                   <div>
                     <div className="text-sm text-muted-foreground mb-1">{item.label}</div>
-                    <div className="text-lg font-medium text-foreground">{item.value}</div>
+                    {item.href ? (
+                      <a href={item.href} className="text-lg font-medium text-foreground hover:text-primary transition-colors">
+                        {item.value}
+                      </a>
+                    ) : (
+                      <div className="text-lg font-medium text-foreground">{item.value}</div>
+                    )}
                   </div>
                 </div>
               ))}
