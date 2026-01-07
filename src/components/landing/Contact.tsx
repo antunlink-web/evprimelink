@@ -7,27 +7,54 @@ import { Label } from '@/components/ui/label';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useToast } from '@/hooks/use-toast';
 
+const WEB3FORMS_ACCESS_KEY = 'YOUR_ACCESS_KEY_HERE'; // Replace with your Web3Forms access key
+
 const Contact = () => {
   const { t } = useLanguage();
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
-      toast({
-        title: t('Poruka poslana!', 'Message Sent!'),
-        description: t(
-          'Hvala na upitu. Javit ćemo vam se uskoro.',
-          'Thank you for your inquiry. We will get back to you soon.'
-        ),
+    const form = e.target as HTMLFormElement;
+    const formData = new FormData(form);
+    formData.append('access_key', WEB3FORMS_ACCESS_KEY);
+
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: formData,
       });
-      (e.target as HTMLFormElement).reset();
-    }, 1000);
+
+      const result = await response.json();
+
+      if (result.success) {
+        toast({
+          title: t('Poruka poslana!', 'Message Sent!'),
+          description: t(
+            'Hvala na upitu. Javit ćemo vam se uskoro.',
+            'Thank you for your inquiry. We will get back to you soon.'
+          ),
+        });
+        form.reset();
+      } else {
+        throw new Error(result.message || 'Form submission failed');
+      }
+    } catch (error) {
+      console.error('Form submission error:', error);
+      toast({
+        title: t('Greška', 'Error'),
+        description: t(
+          'Došlo je do greške. Pokušajte ponovno ili nas kontaktirajte direktno.',
+          'An error occurred. Please try again or contact us directly.'
+        ),
+        variant: 'destructive',
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const contactInfo = [
@@ -73,22 +100,22 @@ const Contact = () => {
               <div className="grid sm:grid-cols-2 gap-4">
                 <div className="space-y-2">
                   <Label htmlFor="name">{t('Ime i prezime', 'Full Name')} *</Label>
-                  <Input id="name" required placeholder={t('Vaše ime', 'Your name')} />
+                  <Input id="name" name="name" required placeholder={t('Vaše ime', 'Your name')} maxLength={100} />
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="email">Email *</Label>
-                  <Input id="email" type="email" required placeholder="email@primjer.hr" />
+                  <Input id="email" name="email" type="email" required placeholder="email@primjer.hr" maxLength={255} />
                 </div>
               </div>
 
               <div className="grid sm:grid-cols-2 gap-4">
                 <div className="space-y-2">
                   <Label htmlFor="phone">{t('Telefon', 'Phone')}</Label>
-                  <Input id="phone" type="tel" placeholder="+385 XX XXX XXXX" />
+                  <Input id="phone" name="phone" type="tel" placeholder="+385 XX XXX XXXX" maxLength={20} />
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="company">{t('Tvrtka', 'Company')}</Label>
-                  <Input id="company" placeholder={t('Naziv tvrtke', 'Company name')} />
+                  <Input id="company" name="company" placeholder={t('Naziv tvrtke', 'Company name')} maxLength={100} />
                 </div>
               </div>
 
@@ -96,9 +123,11 @@ const Contact = () => {
                 <Label htmlFor="message">{t('Poruka', 'Message')} *</Label>
                 <Textarea
                   id="message"
+                  name="message"
                   required
                   rows={5}
                   placeholder={t('Opišite svoj upit...', 'Describe your inquiry...')}
+                  maxLength={2000}
                 />
               </div>
 
