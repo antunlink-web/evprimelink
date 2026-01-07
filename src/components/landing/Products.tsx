@@ -59,7 +59,7 @@ const Products = () => {
         features: ['CCS2 + CHAdeMO', t('Kompaktan dizajn', 'Compact design'), t('Tihi rad', 'Silent operation')],
       },
       {
-        name: 'Primelink DC 160kW Ампера',
+        name: 'Primelink DC 160kW Ampera',
         power: '160 kW',
         image: bfAmpera160,
         description: t(
