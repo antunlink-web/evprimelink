@@ -58,7 +58,7 @@ const Hero = () => {
               <div>
                 <div className="text-3xl font-bold text-accent">22+</div>
                 <div className="text-sm text-primary-foreground/70">
-                  {t('Godina iskustva', 'Years Experience')}
+                  {t('Godina međunarodnog iskustva', 'Years of International Experience')}
                 </div>
               </div>
               <div>
