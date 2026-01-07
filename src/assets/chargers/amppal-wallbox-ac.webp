@@ -1,0 +1,124 @@
+<!doctype html><html lang="ru"><head><base href="/"/><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="robots" content="all"/><meta name="description" content="Зарядные станции для электромобилей и EV-транспорта. Зарядные станции Минск. Get the power!"/><meta name="keywords" content="зарядные, станции, Минск, электромобилей, EV-транспорт, CHAdeMO, CCS, Type2, быстрая, зарядка"/><link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png"/><link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png"/><link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png"/><link rel="manifest" href="favicon/site.webmanifest"/><link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5"/><meta name="theme-color" content="#ffffff"/><title>Установка зарядных станций под ключ для вашего бизнеса | Сеть зарядных станций BatteryFly</title><link rel="stylesheet" href="fonts/font.css"/><script>(function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-K438973N');</script><script>!function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '664719559439329');
+    fbq('track', 'PageView');</script><style>* {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+        margin: 0;
+        padding: 0;
+      }
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        font-family: Mulish, sans-serif;
+        font-size: 14px;
+        overflow: hidden;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        --color-brand: #005eeb;
+        --color-brand-background: #eef5ff;
+        --color-brand-secondary: #d2e4ff;
+        --color-main-text: #2c2e31;
+        --color-main-background: #ffffff;
+        --color-light-text: #c2cddb;
+        --color-brand-additional: #003688;
+        --color-additional-text: #656a71;
+        --color-error: #f44c4c;
+      }
+
+      #root {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        background: var(--color-main-background);
+        flex: 1;
+      }
+
+      a {
+        text-decoration: none;
+        color: var(--color-brand);
+      }
+
+      p,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5 {
+        padding: 0;
+        margin: 0;
+        margin-block-start: 0;
+        margin-block-end: 0;
+      }
+
+      ul {
+        padding-left: 1em;
+      }
+
+      img {
+        user-select: none;
+      }
+
+      /* Chrome, Safari, Edge, Opera */
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+
+      /* Firefox */
+      input[type='number'] {
+        -moz-appearance: textfield;
+      }
+
+      .cursor-pointer {
+        cursor: pointer;
+      }
+
+      /* total width */
+      *::-webkit-scrollbar {
+        background-color: var(--color-main-background);
+        width: 4px;
+      }
+
+      /* background of the scrollbar except button or resizer */
+      *::-webkit-scrollbar-track {
+        background-color: var(--color-main-background);
+      }
+
+      /* scrollbar itself */
+      *::-webkit-scrollbar-thumb {
+        background-color: var(--color-light-text);
+        border-radius: 2px;
+      }
+
+      /* set button(top and bottom of the scrollbar) */
+      *::-webkit-scrollbar-button {
+        display: none;
+      }</style><script defer="defer" src="js/1.fcdad240cb2bb1441e71.js"></script><script defer="defer" src="js/main.fcdad240cb2bb1441e71.js"></script><link href="css/main.fcdad240cb2bb1441e71.css" rel="stylesheet"></head><body><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K438973N" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript><noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=664719559439329&ev=PageView&noscript=1"/></noscript><div id="root"></div></body></html>
