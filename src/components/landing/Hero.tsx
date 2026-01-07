@@ -1,7 +1,7 @@
 import { Zap, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/contexts/LanguageContext';
-import evCar from '@/assets/ev-car.png';
+import evCar from '@/assets/ev-car-hero.png';
 
 const Hero = () => {
   const { t } = useLanguage();
@@ -74,11 +74,11 @@ const Hero = () => {
           </div>
 
           {/* Right Content - EV Car Image */}
-          <div className="relative hidden lg:flex items-center justify-center">
+          <div className="relative hidden lg:flex items-end justify-end -mr-20 xl:-mr-32">
             <img 
               src={evCar} 
               alt="Electric Vehicle" 
-              className="w-full max-w-2xl object-contain drop-shadow-2xl transform translate-x-12"
+              className="w-full max-w-3xl object-contain drop-shadow-2xl mix-blend-multiply"
             />
           </div>
         </div>
