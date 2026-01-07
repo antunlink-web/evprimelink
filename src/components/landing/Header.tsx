@@ -42,12 +42,20 @@ const Header = () => {
 
           {/* Language Toggle & CTA */}
           <div className="hidden md:flex items-center gap-4">
-            <button
-              onClick={() => setLanguage(language === 'hr' ? 'en' : 'hr')}
-              className="flex items-center gap-1 px-3 py-1.5 rounded-md border border-border hover:bg-secondary transition-colors text-sm font-medium"
-            >
-              {language === 'hr' ? '🇭🇷 HR' : '🇬🇧 EN'}
-            </button>
+            <div className="flex rounded-md border border-border overflow-hidden">
+              <button
+                onClick={() => setLanguage('hr')}
+                className={`px-3 py-1.5 text-sm font-medium transition-colors ${language === 'hr' ? 'bg-primary text-primary-foreground' : 'hover:bg-secondary'}`}
+              >
+                HR
+              </button>
+              <button
+                onClick={() => setLanguage('en')}
+                className={`px-3 py-1.5 text-sm font-medium transition-colors ${language === 'en' ? 'bg-primary text-primary-foreground' : 'hover:bg-secondary'}`}
+              >
+                EN
+              </button>
+            </div>
             <Button asChild>
               <a href="#contact">{t('Kontaktirajte nas', 'Contact Us')}</a>
             </Button>
@@ -76,12 +84,20 @@ const Header = () => {
                   {link.label}
                 </a>
               ))}
-              <button
-                onClick={() => setLanguage(language === 'hr' ? 'en' : 'hr')}
-                className="flex items-center gap-1 px-3 py-1.5 rounded-md border border-border hover:bg-secondary transition-colors text-sm font-medium w-fit"
-              >
-                {language === 'hr' ? '🇭🇷 HR' : '🇬🇧 EN'}
-              </button>
+              <div className="flex rounded-md border border-border overflow-hidden w-fit">
+                <button
+                  onClick={() => setLanguage('hr')}
+                  className={`px-3 py-1.5 text-sm font-medium transition-colors ${language === 'hr' ? 'bg-primary text-primary-foreground' : 'hover:bg-secondary'}`}
+                >
+                  HR
+                </button>
+                <button
+                  onClick={() => setLanguage('en')}
+                  className={`px-3 py-1.5 text-sm font-medium transition-colors ${language === 'en' ? 'bg-primary text-primary-foreground' : 'hover:bg-secondary'}`}
+                >
+                  EN
+                </button>
+              </div>
               <Button asChild className="w-fit">
                 <a href="#contact">{t('Kontaktirajte nas', 'Contact Us')}</a>
               </Button>
