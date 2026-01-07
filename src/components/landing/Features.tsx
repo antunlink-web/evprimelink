@@ -1,4 +1,4 @@
-import { Zap, Plug, Briefcase } from 'lucide-react';
+import { Car, Plug, Briefcase } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 const Features = () => {
@@ -6,7 +6,7 @@ const Features = () => {
 
   const features = [
     {
-      icon: Zap,
+      icon: Car,
       title: t('Brzo i praktično punjenje', 'Fast and Convenient Charging'),
     },
     {
