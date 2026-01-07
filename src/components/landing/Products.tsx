@@ -5,10 +5,15 @@ import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 // Import charger images from BatteryFly
-import amppalDc from '@/assets/chargers/amppal-dc.webp';
-import amppalAc from '@/assets/chargers/amppal-ac.webp';
-import amppalWallboxDc from '@/assets/chargers/amppal-wallbox-dc.webp';
-import amppalWallboxAc from '@/assets/chargers/amppal-wallbox-ac.webp';
+import bfAmppalDc120 from '@/assets/chargers/bf-amppal-dc-120.png';
+import bfStreamEca from '@/assets/chargers/bf-stream-eca.png';
+import bfAmppalAc44 from '@/assets/chargers/bf-amppal-ac-44.png';
+import bfAmppalWallboxDc from '@/assets/chargers/bf-amppal-wallbox-dc.png';
+import bfAmppalWallboxAc from '@/assets/chargers/bf-amppal-wallbox-ac.png';
+import bfStreamHub from '@/assets/chargers/bf-stream-hub.png';
+import bfAmpera160 from '@/assets/chargers/bf-ampera-160.png';
+import bfStreamCoulomb from '@/assets/chargers/bf-stream-coulomb.jpg';
+import bfStreamEcw from '@/assets/chargers/bf-stream-ecw.png';
 
 // Import charger images from Dobrateh
 import dobratehAc7kw from '@/assets/chargers/dobrateh-ac-7kw-wall.jpg';
@@ -34,81 +39,91 @@ const Products = () => {
   const products = {
     dc: [
       {
+        name: 'Primelink DC 60-160kW',
+        power: '60-160 kW',
+        image: bfAmppalDc120,
+        description: t(
+          'Stanica za brzo punjenje za sve tipove električnih vozila.',
+          'Fast charging station for all types of electric vehicles.'
+        ),
+        features: ['CCS2 + CHAdeMO', t('Modularni dizajn', 'Modular design'), 'OCPP 1.6J/2.0'],
+      },
+      {
+        name: 'Primelink DC 80kW Стрим EC.A',
+        power: '80 kW',
+        image: bfStreamEca,
+        description: t(
+          'Kompaktna DC stanica za brzo punjenje s naprednim upravljanjem.',
+          'Compact DC fast charging station with advanced management.'
+        ),
+        features: ['CCS2 + CHAdeMO', t('Kompaktan dizajn', 'Compact design'), t('Tihi rad', 'Silent operation')],
+      },
+      {
+        name: 'Primelink DC 160kW Ампера',
+        power: '160 kW',
+        image: bfAmpera160,
+        description: t(
+          'Moćna DC stanica za autoceste i prometna čvorišta.',
+          'Powerful DC station for highways and traffic hubs.'
+        ),
+        features: ['CCS2 + CHAdeMO + GB/T', t('Visoka snaga', 'High power'), t('Brzo punjenje', 'Fast charging')],
+      },
+      {
+        name: 'Primelink DC 40-60kW Стрим EC.W',
+        power: '40-60 kW',
+        image: bfStreamEcw,
+        description: t(
+          'Zidna DC stanica za poslovne objekte i manje flote.',
+          'Wall-mounted DC station for business premises and smaller fleets.'
+        ),
+        features: [t('Zidna montaža', 'Wall mounted'), 'CCS2 + CHAdeMO', t('Jednostavna instalacija', 'Easy installation')],
+      },
+      {
+        name: 'Primelink Wallbox DC 20-30kW',
+        power: '20-30 kW',
+        image: bfAmppalWallboxDc,
+        description: t(
+          'Kompaktni zidni DC punjač za garaže i parkirališta.',
+          'Compact wall-mounted DC charger for garages and parking lots.'
+        ),
+        features: [t('Kompaktan dizajn', 'Compact design'), 'CCS2', t('Zidna montaža', 'Wall mounted')],
+      },
+      {
         name: 'Primelink DC 320-360kW',
         power: '320-360 kW',
         image: dobratehDc320_360kw,
         description: t(
-          'Ultra-brza stanica za punjenje nove generacije. Idealna za autoceste i prometna čvorišta.',
-          'Ultra-fast next-generation charging station. Ideal for highways and traffic hubs.'
+          'Ultra-brza stanica za punjenje nove generacije. Idealna za autoceste.',
+          'Ultra-fast next-generation charging station. Ideal for highways.'
         ),
         features: ['CCS2 + GB/T', t('Modularna arhitektura', 'Modular architecture'), t('Punjenje za 15 min', '15 min charging')],
       },
       {
-        name: 'Primelink DC 60-160kW',
+        name: 'Primelink DC 60-160kW Pro',
         power: '60-160 kW',
         image: dobratehDc60_160kw,
         description: t(
-          'Integrirani DC punjač s CCS2 i GBT konektorima. Istovremeno punjenje do 2 vozila.',
-          'Integrated DC charger with CCS2 and GBT connectors. Simultaneous charging of up to 2 vehicles.'
+          'Integrirani DC punjač s CCS2 i GBT konektorima.',
+          'Integrated DC charger with CCS2 and GBT connectors.'
         ),
         features: ['CCS2 + GB/T', t('Veliki zaslon', 'Large display'), t('Dinamička raspodjela', 'Dynamic power sharing')],
-      },
-      {
-        name: 'Primelink DC 60-160kW Pro',
-        power: '60-160 kW',
-        image: dobratehDcBigscreen,
-        description: t(
-          'Premium DC stanica s velikim zaslonom. Savršena za benzinske postaje i trgovačke centre.',
-          'Premium DC station with large screen. Perfect for gas stations and shopping centers.'
-        ),
-        features: [t('15" zaslon osjetljiv na dodir', '15" touchscreen'), 'CCS2 + CHAdeMO + GB/T', t('Hlađenje tekućinom', 'Liquid cooling')],
-      },
-      {
-        name: 'Primelink DC 60-160kW Classic',
-        power: '60-160 kW',
-        image: amppalDc,
-        description: t(
-          'Klasični DC punjač za sve tipove električnih vozila.',
-          'Classic DC charger for all types of electric vehicles.'
-        ),
-        features: ['CCS2 + GB/T', t('Modularni dizajn', 'Modular design'), t('OCPP 1.6J/2.0', 'OCPP 1.6J/2.0')],
       },
       {
         name: 'Primelink Wallbox DC 20-40kW',
         power: '20-40 kW',
         image: dobratehDc20_40kw,
         description: t(
-          'Kompaktni zidni DC punjač za poslovne objekte i manje flote.',
-          'Compact wall-mounted DC charger for business premises and smaller fleets.'
+          'Kompaktni zidni DC punjač za poslovne objekte.',
+          'Compact wall-mounted DC charger for business premises.'
         ),
         features: [t('Zidna montaža', 'Wall mounted'), 'CCS2 + GB/T', t('Tihi rad', 'Silent operation')],
-      },
-      {
-        name: 'Primelink Wallbox DC 20-30kW',
-        power: '20-30 kW',
-        image: amppalWallboxDc,
-        description: t(
-          'Ekonomični zidni DC punjač za garaže i parkirališta.',
-          'Economical wall-mounted DC charger for garages and parking lots.'
-        ),
-        features: [t('Kompaktan dizajn', 'Compact design'), 'CCS2', t('Jednostavna instalacija', 'Easy installation')],
       },
     ],
     ac: [
       {
-        name: 'Primelink AC 22-44kW',
-        power: '22-44 kW',
-        image: dobratehAc22_44kw,
-        description: t(
-          'Dvostruki AC punjač za javne lokacije i poslovne parkinge.',
-          'Dual AC charger for public locations and business parking lots.'
-        ),
-        features: [t('Dual priključak', 'Dual connector'), 'Type 2', t('OCPP protokol', 'OCPP protocol')],
-      },
-      {
-        name: 'Primelink AC 44kW Floor',
+        name: 'Primelink AC 44kW',
         power: '44 kW',
-        image: amppalAc,
+        image: bfAmppalAc44,
         description: t(
           'Stojeća AC stanica za punjenje. Savršena za parkirališta i javne lokacije.',
           'Floor-standing AC charging station. Perfect for parking lots and public locations.'
@@ -116,14 +131,44 @@ const Products = () => {
         features: [t('Dual priključak', 'Dual connector'), 'Type 2', t('LED indikator', 'LED indicator')],
       },
       {
-        name: 'Primelink AC 14kW Floor',
-        power: '14 kW',
-        image: dobratehAc14kwFloor,
+        name: 'Primelink AC 22-44kW Стрим Кулон',
+        power: '22-44 kW',
+        image: bfStreamCoulomb,
         description: t(
-          'Elegantna stojeća AC stanica s dvostrukim priključkom.',
-          'Elegant floor-standing AC station with dual connector.'
+          'Dvostruki AC punjač za javne lokacije i poslovne parkinge.',
+          'Dual AC charger for public locations and business parking lots.'
         ),
-        features: [t('Kompaktan dizajn', 'Compact design'), 'Type 2', t('Robusna konstrukcija', 'Robust construction')],
+        features: [t('Dual priključak', 'Dual connector'), 'Type 2 + GB/T AC', 'OCPP protokol'],
+      },
+      {
+        name: 'Primelink AC 7-22kW Стрим Hub',
+        power: '7-22 kW',
+        image: bfStreamHub,
+        description: t(
+          'Stanica za parkinge i hubove. Idealna za višestruko punjenje.',
+          'Station for parking lots and hubs. Ideal for multiple charging.'
+        ),
+        features: [t('Za parkinge/hubove', 'For parking/hubs'), 'Type 2', t('Više priključaka', 'Multiple connectors')],
+      },
+      {
+        name: 'Primelink Wallbox AC 7kW',
+        power: '7 kW',
+        image: bfAmppalWallboxAc,
+        description: t(
+          'Kompaktni zidni punjač idealan za kućnu upotrebu i garaže.',
+          'Compact wall charger ideal for home use and garages.'
+        ),
+        features: [t('Zidna montaža', 'Wall mounted'), t('WiFi povezivost', 'WiFi connectivity'), t('RFID autorizacija', 'RFID authorization')],
+      },
+      {
+        name: 'Primelink AC 22-44kW',
+        power: '22-44 kW',
+        image: dobratehAc22_44kw,
+        description: t(
+          'Dvostruki AC punjač za javne lokacije.',
+          'Dual AC charger for public locations.'
+        ),
+        features: [t('Dual priključak', 'Dual connector'), 'Type 2', 'OCPP protokol'],
       },
       {
         name: 'Primelink AC 7-22kW X-Vision',
@@ -136,22 +181,22 @@ const Products = () => {
         features: ['Type 2', t('RGB osvjetljenje', 'RGB lighting'), t('WiFi + Bluetooth', 'WiFi + Bluetooth')],
       },
       {
-        name: 'Primelink Wallbox AC 7kW',
+        name: 'Primelink AC 14kW Floor',
+        power: '14 kW',
+        image: dobratehAc14kwFloor,
+        description: t(
+          'Elegantna stojeća AC stanica s dvostrukim priključkom.',
+          'Elegant floor-standing AC station with dual connector.'
+        ),
+        features: [t('Kompaktan dizajn', 'Compact design'), 'Type 2', t('Robusna konstrukcija', 'Robust construction')],
+      },
+      {
+        name: 'Primelink Wallbox AC 7kW Wall',
         power: '7 kW',
         image: dobratehAc7kw,
         description: t(
-          'Kompaktni zidni punjač idealan za kućnu upotrebu i garaže.',
-          'Compact wall charger ideal for home use and garages.'
-        ),
-        features: [t('Zidna montaža', 'Wall mounted'), t('WiFi povezivost', 'WiFi connectivity'), t('RFID autorizacija', 'RFID authorization')],
-      },
-      {
-        name: 'Primelink Wallbox AC 7kW Mini',
-        power: '7 kW',
-        image: amppalWallboxAc,
-        description: t(
-          'Najmanji zidni punjač za ograničene prostore.',
-          'Smallest wall charger for limited spaces.'
+          'Kompaktni zidni punjač za ograničene prostore.',
+          'Compact wall charger for limited spaces.'
         ),
         features: [t('Ultra kompaktan', 'Ultra compact'), 'Type 2', t('Plug & Play', 'Plug & Play')],
       },
