@@ -1,5 +1,5 @@
-import { Zap } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
+import primelinkLogo from '@/assets/primelink-logo.png';
 
 const Footer = () => {
   const { t } = useLanguage();
@@ -22,11 +22,8 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           {/* Brand */}
           <div className="md:col-span-2">
-            <a href="#" className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
-                <Zap size={24} className="text-primary-foreground" />
-              </div>
-              <span className="text-xl font-bold">Primelink</span>
+            <a href="#" className="flex items-center mb-4">
+              <img src={primelinkLogo} alt="PrimeLink" className="h-12 w-auto brightness-0 invert" />
             </a>
             <p className="text-background/70 max-w-md">
               {t(
