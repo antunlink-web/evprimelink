@@ -46,7 +46,7 @@ const Contact = () => {
     {
       icon: MapPin,
       label: t('Adresa', 'Address'),
-      value: 'Zagreb, Hrvatska',
+      value: 'Tarska 26a, 10040 Zagreb, Hrvatska',
       href: undefined,
     },
   ];
