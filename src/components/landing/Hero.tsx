@@ -1,4 +1,4 @@
-import { Zap, ArrowRight } from 'lucide-react';
+import { Zap, ArrowRight, Car } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/contexts/LanguageContext';
 
@@ -79,15 +79,19 @@ const Hero = () => {
           {/* Right Content - EV Illustration */}
           <div className="relative hidden lg:block">
             <div className="relative w-full aspect-square max-w-lg mx-auto">
-              {/* Battery/EV Graphic */}
+              {/* Car Graphic */}
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-64 h-80 rounded-3xl bg-gradient-to-b from-primary-foreground/20 to-primary-foreground/5 backdrop-blur-sm border border-primary-foreground/20 flex flex-col items-center justify-center gap-4 p-6">
-                  <div className="w-20 h-8 rounded-full bg-accent/30" />
-                  <div className="flex-1 w-full rounded-2xl bg-gradient-to-t from-accent via-accent/60 to-transparent relative overflow-hidden">
-                    <div className="absolute bottom-0 left-0 right-0 h-3/4 bg-accent animate-pulse" />
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <Zap size={48} className="text-primary-foreground drop-shadow-lg" />
+                <div className="w-72 h-72 rounded-3xl bg-gradient-to-b from-primary-foreground/20 to-primary-foreground/5 backdrop-blur-sm border border-primary-foreground/20 flex flex-col items-center justify-center gap-6 p-8">
+                  {/* Car icon */}
+                  <div className="w-32 h-32 rounded-2xl bg-accent/20 flex items-center justify-center">
+                    <Car size={72} className="text-accent drop-shadow-lg" />
+                  </div>
+                  {/* Charging indicator */}
+                  <div className="flex items-center gap-3">
+                    <div className="w-16 h-2 rounded-full bg-accent/30 overflow-hidden">
+                      <div className="h-full w-full bg-accent animate-pulse" />
                     </div>
+                    <Zap size={20} className="text-accent" />
                   </div>
                   <div className="text-primary-foreground font-bold text-lg">100%</div>
                 </div>
