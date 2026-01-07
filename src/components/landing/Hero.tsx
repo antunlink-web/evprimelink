@@ -28,7 +28,7 @@ const Hero = () => {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
               Primelink
               <span className="block text-accent">
-                {t('Dobij snagu', 'Get the Power')}
+                Get the Power
               </span>
             </h1>
 
