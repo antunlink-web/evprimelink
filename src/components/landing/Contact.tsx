@@ -39,7 +39,7 @@ const Contact = () => {
     {
       icon: Mail,
       label: 'Email',
-      value: 'info@primelink.hr',
+      value: 'primelink@primelink.hr',
     },
     {
       icon: MapPin,
