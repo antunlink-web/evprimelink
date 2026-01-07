@@ -23,6 +23,13 @@ export default {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
         },
+        primelink: {
+          blue: "hsl(var(--primelink-blue))",
+          "blue-dark": "hsl(var(--primelink-blue-dark))",
+          cyan: "hsl(var(--primelink-cyan))",
+          navy: "hsl(var(--primelink-navy))",
+          light: "hsl(var(--primelink-light))",
+        },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
