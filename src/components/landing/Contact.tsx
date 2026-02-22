@@ -61,8 +61,8 @@ const Contact = () => {
     {
       icon: Phone,
       label: t('Telefon', 'Phone'),
-      value: '+385 99 326 1222',
-      href: 'tel:+385993261222',
+      value: '+385 91 512 2888',
+      href: 'tel:+385915122888',
     },
     {
       icon: Mail,
