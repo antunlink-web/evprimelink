@@ -8,6 +8,7 @@ import { MapPin, BarChart3, Smartphone, Zap, QrCode, Nfc, Download } from 'lucid
 import voltappMap from '@/assets/app/voltapp-map.png';
 import voltappCharging from '@/assets/app/voltapp-charging.png';
 import voltappTap from '@/assets/app/voltapp-tap.png';
+import voltappLogo from '@/assets/app/voltapp-logo.png';
 
 const VoltAppContent = () => {
   const { t } = useLanguage();
