@@ -43,7 +43,7 @@ const VoltAppContent = () => {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-primary-foreground mb-4 flex items-center">
-                   V<img src={voltappBolt} alt="O" className="inline-block h-[1.1em] -mx-[0.05em] relative -top-[0.02em]" />LT<span className="text-accent">APP</span>
+                   V<img src={voltappBolt} alt="O" className="inline-block h-[1.1em] -mx-[0.05em] relative top-[0.05em]" />LT<span className="text-accent">APP</span>
                  </h1>
                 <p className="text-lg md:text-xl text-primary-foreground/80 mb-8 max-w-lg">
                   {t(
