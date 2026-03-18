@@ -11,6 +11,7 @@ import voltappInsights from '@/assets/app/voltapp-insights.avif';
 import voltappTap from '@/assets/app/voltapp-tap.avif';
 import voltappCta from '@/assets/app/voltapp-cta.avif';
 import voltappLogo from '@/assets/app/voltapp-logo.png';
+import voltappBolt from '@/assets/app/voltapp-bolt.png';
 
 const VoltAppContent = () => {
   const { t } = useLanguage();
