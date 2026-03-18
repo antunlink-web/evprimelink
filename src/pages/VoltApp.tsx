@@ -141,7 +141,7 @@ const VoltAppContent = () => {
           <div className="container mx-auto px-4">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="flex justify-center lg:justify-start order-2 lg:order-1">
-                <img src={voltappTap} alt="Tap to Charge" className="w-56 md:w-64 drop-shadow-xl" />
+                <img src={voltappTap} alt="Tap to Charge" className="w-64 md:w-80 drop-shadow-xl" />
               </div>
               <div className="order-1 lg:order-2">
                 <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
