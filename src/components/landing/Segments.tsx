@@ -1,4 +1,4 @@
-import { Hotel, ShoppingBag, Truck, Building2 } from 'lucide-react';
+import { Hotel, ShoppingBag, Building2, Fuel } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { useLanguage } from '@/contexts/LanguageContext';
 
@@ -10,67 +10,51 @@ const Segments = () => {
       icon: Hotel,
       title: t('Hoteli i turizam', 'Hotels & Tourism'),
       description: t(
-        'Privucite goste s EV vozilima i povećajte prihod lokacije. Gosti punjenje percipiraju kao premium uslugu.',
-        'Attract EV-driving guests and increase venue revenue. Guests perceive charging as a premium amenity.'
+        'Gosti s EV vozilima ciljano biraju hotele s punjačima. Ponudite im premium uslugu bez troškova.',
+        'Guests with EVs actively seek hotels with chargers. Offer them a premium amenity at no cost.'
       ),
-      benefits: [
-        t('Privlačite premium goste', 'Attract premium guests'),
-        t('Dodatni izvor prihoda', 'Additional revenue stream'),
-        t('ESG i zeleni imidž', 'ESG & green branding'),
-      ],
+      stat: t('+34% više EV gostiju', '+34% more EV guests'),
     },
     {
       icon: ShoppingBag,
       title: t('Trgovine i retail', 'Retail & Shopping'),
       description: t(
-        'Dulje zadržavanje kupaca i veća potrošnja. EV punjenje pretvara parkiralište u profit centar.',
-        'Longer customer dwell time and higher spending. EV charging turns your parking lot into a profit center.'
+        'Kupci koji pune auto troše u prosjeku 40% više jer ostaju dulje. Vaše parkiralište postaje profit centar.',
+        'Customers charging their car spend on average 40% more because they stay longer. Your parking lot becomes a profit center.'
       ),
-      benefits: [
-        t('Veća potrošnja kupaca', 'Higher customer spending'),
-        t('Konkurentska prednost', 'Competitive advantage'),
-        t('Monetizacija parkirališta', 'Parking lot monetization'),
-      ],
-    },
-    {
-      icon: Truck,
-      title: t('Flote i logistika', 'Fleets & Logistics'),
-      description: t(
-        'Smanjite troškove goriva i održavanja voznog parka prelaskom na električnu mobilnost.',
-        'Reduce fuel and maintenance costs by transitioning your fleet to electric mobility.'
-      ),
-      benefits: [
-        t('Do 70% niži troškovi goriva', 'Up to 70% lower fuel costs'),
-        t('Manji troškovi održavanja', 'Lower maintenance costs'),
-        t('Smart fleet management', 'Smart fleet management'),
-      ],
+      stat: t('+40% potrošnja kupaca', '+40% customer spending'),
     },
     {
       icon: Building2,
-      title: t('Gradovi i općine', 'Cities & Municipalities'),
+      title: t('Uredske zgrade', 'Office Buildings'),
       description: t(
-        'Izgradite javnu punilačku mrežu i pozicionirajte svoju zajednicu kao lidera u zelenoj mobilnosti.',
-        'Build a public charging network and position your community as a green mobility leader.'
+        'Privucite kvalitetne stanare i zaposlenike. EV punjenje je novi standard za moderne poslovne prostore.',
+        'Attract quality tenants and employees. EV charging is the new standard for modern business spaces.'
       ),
-      benefits: [
-        t('EU sufinanciranje', 'EU co-funding eligible'),
-        t('Zelena tranzicija', 'Green transition'),
-        t('Privlačenje investicija', 'Investment attraction'),
-      ],
+      stat: t('Premium pozicioniranje', 'Premium positioning'),
+    },
+    {
+      icon: Fuel,
+      title: t('Benzinske postaje', 'Fuel Stations'),
+      description: t(
+        'Proširite ponudu uz postojeću infrastrukturu. Pripremite se za budućnost mobilnosti.',
+        'Expand your offering alongside existing infrastructure. Prepare for the future of mobility.'
+      ),
+      stat: t('Budućnost mobilnosti', 'Future of mobility'),
     },
   ];
 
   return (
-    <section id="segments" className="py-20">
+    <section id="locations" className="py-20 bg-secondary/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-14">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            {t('Kome je ovo namijenjeno?', 'Who Is This For?')}
+            {t('Idealne lokacije za partnerstvo', 'Ideal Partner Locations')}
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
             {t(
-              'EV punjenje nije trošak — to je investicija. Pronađite svoje rješenje.',
-              'EV charging isn\'t a cost — it\'s an investment. Find your solution.'
+              'Svaka lokacija s parkiralištem može postati punilački centar — i izvor prihoda.',
+              'Any location with parking can become a charging hub — and a revenue source.'
             )}
           </p>
         </div>
@@ -85,15 +69,10 @@ const Segments = () => {
                   </div>
                   <div className="flex-1">
                     <h3 className="text-xl font-bold text-foreground mb-2">{segment.title}</h3>
-                    <p className="text-muted-foreground mb-4">{segment.description}</p>
-                    <ul className="space-y-2">
-                      {segment.benefits.map((benefit, j) => (
-                        <li key={j} className="flex items-center gap-2 text-sm font-medium text-foreground">
-                          <div className="w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0" />
-                          {benefit}
-                        </li>
-                      ))}
-                    </ul>
+                    <p className="text-muted-foreground mb-3">{segment.description}</p>
+                    <div className="inline-flex px-3 py-1 rounded-full bg-accent/10 text-accent text-sm font-semibold">
+                      {segment.stat}
+                    </div>
                   </div>
                 </div>
               </CardContent>

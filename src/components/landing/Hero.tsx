@@ -1,4 +1,4 @@
-import { ArrowRight, Calculator } from 'lucide-react';
+import { ArrowRight, MapPin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/contexts/LanguageContext';
 
@@ -7,7 +7,6 @@ const Hero = () => {
 
   return (
     <section className="relative min-h-screen gradient-hero flex items-center overflow-hidden">
-      {/* Decorative */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-20 left-10 w-72 h-72 bg-accent/10 rounded-full blur-3xl" />
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-primary-foreground/5 rounded-full blur-3xl" />
@@ -19,36 +18,40 @@ const Hero = () => {
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-foreground/10 backdrop-blur-sm mb-8">
             <div className="w-2 h-2 rounded-full bg-accent animate-pulse" />
             <span className="text-sm font-medium text-primary-foreground/90">
-              {t('Kompletno EV rješenje za Hrvatsku', 'Complete EV Solution for Croatia')}
+              {t('Bez ulaganja • Bez rizika • Samo zarada', 'No Investment • No Risk • Just Revenue')}
             </span>
           </div>
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-[1.1] text-primary-foreground mb-6">
-            {t('Pokrenite svoj', 'Start Your')}
+            {t('Zarađujte od', 'Earn From')}
             <br />
             <span className="text-accent">
-              {t('EV punjački biznis', 'EV Charging Business')}
+              {t('EV punjenja', 'EV Charging')}
+            </span>
+            <br />
+            <span className="text-primary-foreground/90">
+              {t('bez investicije', 'Without Investment')}
             </span>
           </h1>
 
           <p className="text-lg md:text-xl text-primary-foreground/75 mb-10 max-w-xl leading-relaxed">
             {t(
-              'Instalacija, upravljanje i monetizacija punionica za električna vozila. Od planiranja do zarade — sve na jednom mjestu.',
-              'Installation, management, and monetization of EV charging stations. From planning to revenue — all in one place.'
+              'Mi instaliramo, upravljamo i održavamo punionice na vašoj lokaciji. Vi dobivate dodatni prihod i više posjetitelja — bez ikakvog troška.',
+              'We install, manage, and maintain chargers at your location. You get extra income and more visitors — at zero cost to you.'
             )}
           </p>
 
           <div className="flex flex-wrap gap-4 mb-16">
             <Button size="lg" variant="secondary" className="gap-2 text-base h-13 px-8" asChild>
               <a href="#contact">
-                {t('Zatražite ponudu', 'Get an Offer')}
+                {t('Postanite partner', 'Become a Partner')}
                 <ArrowRight size={18} />
               </a>
             </Button>
             <Button size="lg" variant="outline" className="gap-2 text-base h-13 px-8 border-primary-foreground/25 text-primary-foreground bg-primary-foreground/10 hover:bg-primary-foreground/20" asChild>
-              <a href="#monetization">
-                <Calculator size={18} />
-                {t('ROI kalkulator', 'ROI Calculator')}
+              <a href="#contact">
+                <MapPin size={18} />
+                {t('Prijavite lokaciju', 'Submit Your Location')}
               </a>
             </Button>
           </div>
@@ -56,10 +59,10 @@ const Hero = () => {
           {/* Trust bar */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 pt-8 border-t border-primary-foreground/15">
             {[
-              { value: '150+', label: t('Instaliranih stanica', 'Stations Installed') },
-              { value: '22+', label: t('Godina iskustva', 'Years Experience') },
-              { value: '99.5%', label: t('Uptime', 'Uptime') },
-              { value: '24/7', label: t('Podrška', 'Support') },
+              { value: '0 €', label: t('Vaša investicija', 'Your Investment') },
+              { value: '150+', label: t('Aktivnih lokacija', 'Active Locations') },
+              { value: '24/7', label: t('Upravljanje i podrška', 'Management & Support') },
+              { value: '99.5%', label: t('Uptime punionica', 'Charger Uptime') },
             ].map((stat, i) => (
               <div key={i}>
                 <div className="text-2xl md:text-3xl font-bold text-accent">{stat.value}</div>
@@ -70,7 +73,6 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Bottom Wave */}
       <div className="absolute bottom-0 left-0 right-0">
         <svg viewBox="0 0 1440 120" fill="none" className="w-full">
           <path

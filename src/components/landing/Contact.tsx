@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Send, Phone, Mail, MapPin } from 'lucide-react';
+import { Send, Phone, Mail, MapPin, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -27,15 +27,14 @@ const Contact = () => {
         method: 'POST',
         body: formData,
       });
-
       const result = await response.json();
 
       if (result.success) {
         toast({
-          title: t('Poruka poslana!', 'Message Sent!'),
+          title: t('Prijava poslana!', 'Submission Sent!'),
           description: t(
-            'Hvala na upitu. Javit ćemo vam se uskoro.',
-            'Thank you for your inquiry. We will get back to you soon.'
+            'Hvala! Javit ćemo vam se u roku 24 sata s besplatnom evaluacijom.',
+            'Thank you! We\'ll get back to you within 24 hours with a free evaluation.'
           ),
         });
         form.reset();
@@ -79,24 +78,39 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="py-20 bg-secondary/30">
+    <section id="contact" className="py-20">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            {t('Kontaktirajte nas', 'Contact Us')}
+        {/* CTA Banner */}
+        <div className="gradient-hero rounded-3xl p-8 md:p-12 mb-16 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-4">
+            {t('Besplatna evaluacija lokacije', 'Free Location Evaluation')}
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-primary-foreground/80 max-w-xl mx-auto mb-6 text-lg">
             {t(
-              'Imate pitanja o našim proizvodima ili trebate prilagođeno rješenje? Javite nam se!',
-              'Have questions about our products or need a customized solution? Get in touch!'
+              'Prijavite svoju lokaciju i saznajte koliko možete zarađivati — bez ikakve obveze.',
+              'Submit your location and find out how much you can earn — with no obligation.'
             )}
           </p>
+          <div className="flex flex-wrap justify-center gap-3">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-foreground/10 text-primary-foreground text-sm">
+              <ArrowRight size={14} /> {t('Odgovor u 24h', 'Response in 24h')}
+            </div>
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-foreground/10 text-primary-foreground text-sm">
+              <ArrowRight size={14} /> {t('Bez obveze', 'No obligation')}
+            </div>
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-foreground/10 text-primary-foreground text-sm">
+              <ArrowRight size={14} /> {t('Besplatno', 'Free')}
+            </div>
+          </div>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
-          {/* Contact Form */}
+          {/* Form */}
           <div className="bg-card rounded-2xl p-8 shadow-lg border border-border">
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <h3 className="text-xl font-bold text-foreground mb-6">
+              {t('Prijavite lokaciju', 'Submit Your Location')}
+            </h3>
+            <form onSubmit={handleSubmit} className="space-y-5">
               <div className="grid sm:grid-cols-2 gap-4">
                 <div className="space-y-2">
                   <Label htmlFor="name">{t('Ime i prezime', 'Full Name')} *</Label>
@@ -114,19 +128,23 @@ const Contact = () => {
                   <Input id="phone" name="phone" type="tel" placeholder="+385 XX XXX XXXX" maxLength={20} />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="company">{t('Tvrtka', 'Company')}</Label>
-                  <Input id="company" name="company" placeholder={t('Naziv tvrtke', 'Company name')} maxLength={100} />
+                  <Label htmlFor="company">{t('Tvrtka / Lokacija', 'Company / Location')}</Label>
+                  <Input id="company" name="company" placeholder={t('Naziv', 'Name')} maxLength={100} />
                 </div>
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="message">{t('Poruka', 'Message')} *</Label>
+                <Label htmlFor="location_type">{t('Tip lokacije', 'Location Type')}</Label>
+                <Input id="location_type" name="location_type" placeholder={t('Hotel, trgovina, ured...', 'Hotel, retail, office...')} maxLength={100} />
+              </div>
+
+              <div className="space-y-2">
+                <Label htmlFor="message">{t('Poruka (opcionalno)', 'Message (optional)')}</Label>
                 <Textarea
                   id="message"
                   name="message"
-                  required
-                  rows={5}
-                  placeholder={t('Opišite svoj upit...', 'Describe your inquiry...')}
+                  rows={3}
+                  placeholder={t('Dodatne informacije o lokaciji...', 'Additional information about the location...')}
                   maxLength={2000}
                 />
               </div>
@@ -137,7 +155,7 @@ const Contact = () => {
                 ) : (
                   <>
                     <Send size={18} />
-                    {t('Pošalji poruku', 'Send Message')}
+                    {t('Prijavite lokaciju', 'Submit Location')}
                   </>
                 )}
               </Button>
@@ -146,7 +164,10 @@ const Contact = () => {
 
           {/* Contact Info */}
           <div className="flex flex-col justify-center">
-            <div className="space-y-8">
+            <h3 className="text-xl font-bold text-foreground mb-6">
+              {t('Ili nas kontaktirajte direktno', 'Or Contact Us Directly')}
+            </h3>
+            <div className="space-y-6">
               {contactInfo.map((item, index) => (
                 <div key={index} className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-lg gradient-primary flex items-center justify-center flex-shrink-0">
@@ -164,14 +185,6 @@ const Contact = () => {
                   </div>
                 </div>
               ))}
-            </div>
-
-            {/* Map placeholder */}
-            <div className="mt-8 rounded-xl overflow-hidden border border-border h-48 bg-muted flex items-center justify-center">
-              <div className="text-center text-muted-foreground">
-                <MapPin size={32} className="mx-auto mb-2 opacity-50" />
-                <span className="text-sm">{t('Karta lokacije', 'Location Map')}</span>
-              </div>
             </div>
           </div>
         </div>
