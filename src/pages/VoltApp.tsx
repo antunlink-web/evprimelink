@@ -48,15 +48,15 @@ const VoltAppContent = () => {
                   )}
                 </p>
                 <div className="flex flex-wrap gap-3">
-                  <Button size="lg" variant="secondary" className="gap-2 h-13 px-6">
+                  <Button size="lg" variant="secondary" className="gap-2 h-14 px-5">
                     <svg viewBox="0 0 24 24" className="w-5 h-5" fill="currentColor"><path d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 21.99 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.1 21.99C7.79 22.03 6.8 20.68 5.96 19.47C4.25 16.99 2.97 12.5 4.7 9.76C5.55 8.4 6.96 7.53 8.5 7.51C9.77 7.49 10.97 8.39 11.74 8.39C12.51 8.39 13.97 7.31 15.46 7.47C16.08 7.5 17.62 7.72 18.61 9.15C18.53 9.2 16.61 10.31 16.63 12.63C16.66 15.42 19.1 16.33 19.13 16.35C19.11 16.41 18.74 17.71 17.9 19.05L18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z"/></svg>
                     App Store
                   </Button>
-                  <Button size="lg" variant="secondary" className="gap-2 h-13 px-6">
+                  <Button size="lg" variant="secondary" className="gap-2 h-14 px-5">
                     <svg viewBox="0 0 24 24" className="w-5 h-5" fill="currentColor"><path d="M3 20.5V3.5C3 2.91 3.34 2.39 3.84 2.15L13.69 12L3.84 21.85C3.34 21.61 3 21.09 3 20.5ZM16.81 15.12L6.05 21.34L14.54 12.85L16.81 15.12ZM20.16 10.81C20.5 11.08 20.75 11.5 20.75 12C20.75 12.5 20.5 12.92 20.16 13.19L17.89 14.5L15.39 12L17.89 9.5L20.16 10.81ZM6.05 2.66L16.81 8.88L14.54 11.15L6.05 2.66Z"/></svg>
                     Google Play
                   </Button>
-                  <Button size="lg" variant="outline" className="gap-2 h-13 px-6 border-primary-foreground/25 text-primary-foreground bg-primary-foreground/10 hover:bg-primary-foreground/20">
+                  <Button size="lg" variant="outline" className="gap-2 h-14 px-5 border-primary-foreground/25 text-primary-foreground bg-primary-foreground/10 hover:bg-primary-foreground/20">
                     <Smartphone size={18} />
                     {t('Otvori u pregledniku', 'Open in Browser')}
                   </Button>
@@ -201,15 +201,15 @@ const VoltAppContent = () => {
                     )}
                   </p>
                   <div className="flex flex-wrap gap-3">
-                    <Button size="lg" variant="secondary" className="gap-2 h-13 px-6">
+                    <Button size="lg" variant="secondary" className="gap-2 h-14 px-5">
                       <svg viewBox="0 0 24 24" className="w-5 h-5" fill="currentColor"><path d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 21.99 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.1 21.99C7.79 22.03 6.8 20.68 5.96 19.47C4.25 16.99 2.97 12.5 4.7 9.76C5.55 8.4 6.96 7.53 8.5 7.51C9.77 7.49 10.97 8.39 11.74 8.39C12.51 8.39 13.97 7.31 15.46 7.47C16.08 7.5 17.62 7.72 18.61 9.15C18.53 9.2 16.61 10.31 16.63 12.63C16.66 15.42 19.1 16.33 19.13 16.35C19.11 16.41 18.74 17.71 17.9 19.05L18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z"/></svg>
                       App Store
                     </Button>
-                    <Button size="lg" variant="secondary" className="gap-2 h-13 px-6">
+                    <Button size="lg" variant="secondary" className="gap-2 h-14 px-5">
                       <svg viewBox="0 0 24 24" className="w-5 h-5" fill="currentColor"><path d="M3 20.5V3.5C3 2.91 3.34 2.39 3.84 2.15L13.69 12L3.84 21.85C3.34 21.61 3 21.09 3 20.5ZM16.81 15.12L6.05 21.34L14.54 12.85L16.81 15.12ZM20.16 10.81C20.5 11.08 20.75 11.5 20.75 12C20.75 12.5 20.5 12.92 20.16 13.19L17.89 14.5L15.39 12L17.89 9.5L20.16 10.81ZM6.05 2.66L16.81 8.88L14.54 11.15L6.05 2.66Z"/></svg>
                       Google Play
                     </Button>
-                    <Button size="lg" variant="outline" className="gap-2 h-13 px-6 border-primary-foreground/25 text-primary-foreground bg-primary-foreground/10 hover:bg-primary-foreground/20">
+                    <Button size="lg" variant="outline" className="gap-2 h-14 px-5 border-primary-foreground/25 text-primary-foreground bg-primary-foreground/10 hover:bg-primary-foreground/20">
                       <Smartphone size={18} />
                       {t('U pregledniku', 'In Browser')}
                     </Button>
