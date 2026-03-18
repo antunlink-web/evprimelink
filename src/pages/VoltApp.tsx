@@ -11,6 +11,7 @@ import voltappInsights from '@/assets/app/voltapp-insights.avif';
 import voltappTap from '@/assets/app/voltapp-tap.avif';
 import voltappCta from '@/assets/app/voltapp-cta.avif';
 import voltappLogo from '@/assets/app/voltapp-logo.png';
+import voltappBolt from '@/assets/app/voltapp-bolt.png';
 
 const VoltAppContent = () => {
   const { t } = useLanguage();
@@ -41,8 +42,8 @@ const VoltAppContent = () => {
           <div className="container mx-auto px-4 relative z-10">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
-                <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-primary-foreground mb-4">
-                   <span className="text-accent">V</span>OLT<span className="text-accent">APP</span>
+                <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-primary-foreground mb-4 flex items-center">
+                   V<img src={voltappBolt} alt="O" className="inline-block h-[0.85em] -mx-1 relative -top-[0.02em]" />LT<span className="text-accent">APP</span>
                  </h1>
                 <p className="text-lg md:text-xl text-primary-foreground/80 mb-8 max-w-lg">
                   {t(
