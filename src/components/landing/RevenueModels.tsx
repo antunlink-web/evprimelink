@@ -15,7 +15,7 @@ const RevenueModels = () => {
         'Receive a fixed monthly amount for each charger at your location. Guaranteed income regardless of usage.'
       ),
       highlight: t('Garantirani prihod', 'Guaranteed Income'),
-      example: t('od 200 €/mj po punjaču', 'from €200/mo per charger'),
+      example: t('od 50€/mj po punjaču', 'from €50/mo per charger'),
     },
     {
       icon: PieChart,
