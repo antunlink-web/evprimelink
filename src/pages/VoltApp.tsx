@@ -8,6 +8,7 @@ import { MapPin, BarChart3, Smartphone, Zap, QrCode, Nfc, Download } from 'lucid
 import voltappMap from '@/assets/app/voltapp-map.png';
 import voltappCharging from '@/assets/app/voltapp-charging.png';
 import voltappTap from '@/assets/app/voltapp-tap.png';
+import voltappLogo from '@/assets/app/voltapp-logo.png';
 
 const VoltAppContent = () => {
   const { t } = useLanguage();
@@ -38,9 +39,7 @@ const VoltAppContent = () => {
           <div className="container mx-auto px-4 relative z-10">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
-                <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-primary-foreground mb-4">
-                  <span className="text-accent">V</span>OLT<span className="text-accent">APP</span>
-                </h1>
+                <img src={voltappLogo} alt="VoltApp" className="h-16 md:h-20 mb-4 object-contain" />
                 <p className="text-lg md:text-xl text-primary-foreground/80 mb-8 max-w-lg">
                   {t(
                     'VoltApp je vaš pametni pratilac za jednostavno punjenje električnih vozila. Pronađite, punite i plaćajte — sve u jednoj aplikaciji.',
