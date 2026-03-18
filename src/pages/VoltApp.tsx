@@ -5,9 +5,11 @@ import Footer from '@/components/landing/Footer';
 import { Button } from '@/components/ui/button';
 import { MapPin, BarChart3, Smartphone, Zap, QrCode, Nfc, Download } from 'lucide-react';
 
-import voltappMap from '@/assets/app/voltapp-map.png';
-import voltappCharging from '@/assets/app/voltapp-charging.png';
-import voltappTap from '@/assets/app/voltapp-tap.png';
+import voltappHero from '@/assets/app/voltapp-hero.avif';
+import voltappMap from '@/assets/app/voltapp-map.avif';
+import voltappInsights from '@/assets/app/voltapp-insights.avif';
+import voltappTap from '@/assets/app/voltapp-tap.avif';
+import voltappCta from '@/assets/app/voltapp-cta.avif';
 import voltappLogo from '@/assets/app/voltapp-logo.png';
 
 const VoltAppContent = () => {
