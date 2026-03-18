@@ -1,6 +1,7 @@
 import { ArrowRight, MapPin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/contexts/LanguageContext';
+import heroEvCar from '@/assets/hero-ev-car.png';
 
 const Hero = () => {
   const { t } = useLanguage();
@@ -14,7 +15,8 @@ const Hero = () => {
       </div>
 
       <div className="container mx-auto px-4 pt-28 pb-20 relative z-10">
-        <div className="max-w-3xl">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-foreground/10 backdrop-blur-sm mb-8">
             <div className="w-2 h-2 rounded-full bg-accent animate-pulse" />
             <span className="text-sm font-medium text-primary-foreground/90">
@@ -69,6 +71,18 @@ const Hero = () => {
                 <div className="text-sm text-primary-foreground/60">{stat.label}</div>
               </div>
             ))}
+          </div>
+        </div>
+
+          {/* Right - EV Car */}
+          <div className="hidden lg:flex items-center justify-center relative">
+            <img
+              src={heroEvCar}
+              alt="Electric Vehicle"
+              className="w-full max-w-lg drop-shadow-2xl"
+            />
+            {/* Glow effect behind car */}
+            <div className="absolute inset-0 bg-accent/10 blur-3xl rounded-full scale-75 -z-10" />
           </div>
         </div>
       </div>
