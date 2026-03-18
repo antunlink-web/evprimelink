@@ -3,7 +3,7 @@ import { LanguageProvider } from '@/contexts/LanguageContext';
 import Header from '@/components/landing/Header';
 import Footer from '@/components/landing/Footer';
 import { Button } from '@/components/ui/button';
-import { MapPin, BarChart3, Smartphone, Zap, QrCode, Nfc, Download } from 'lucide-react';
+import { Smartphone, QrCode, Nfc } from 'lucide-react';
 
 import voltappHero from '@/assets/app/voltapp-hero.avif';
 import voltappMap from '@/assets/app/voltapp-map.avif';
