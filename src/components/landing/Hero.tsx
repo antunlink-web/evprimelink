@@ -1,4 +1,4 @@
-import { Zap, ArrowRight } from 'lucide-react';
+import { ArrowRight, Calculator } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/contexts/LanguageContext';
 
@@ -7,98 +7,65 @@ const Hero = () => {
 
   return (
     <section className="relative min-h-screen gradient-hero flex items-center overflow-hidden">
-      {/* Decorative Elements */}
+      {/* Decorative */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-20 left-10 w-32 h-32 bg-accent/20 rounded-full blur-3xl" />
-        <div className="absolute bottom-20 right-10 w-48 h-48 bg-primary-foreground/10 rounded-full blur-3xl" />
-        <div className="absolute top-1/2 left-1/4 w-24 h-24 bg-accent/10 rounded-full blur-2xl" />
+        <div className="absolute top-20 left-10 w-72 h-72 bg-accent/10 rounded-full blur-3xl" />
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-primary-foreground/5 rounded-full blur-3xl" />
+        <div className="absolute top-1/3 right-1/4 w-48 h-48 bg-accent/5 rounded-full blur-3xl" />
       </div>
 
-      <div className="container mx-auto px-4 pt-24 pb-16 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left Content */}
-          <div className="text-primary-foreground">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-foreground/10 backdrop-blur-sm mb-6">
-              <Zap size={16} className="text-accent" />
-              <span className="text-sm font-medium">
-                {t('Pouzdana EV infrastruktura', 'Reliable EV Infrastructure')}
-              </span>
-            </div>
-
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-              Primelink
-              <span className="block text-accent">
-                Get the Power
-              </span>
-            </h1>
-
-            <p className="text-lg md:text-xl text-primary-foreground/80 mb-8 max-w-lg">
-              {t(
-                'AC i DC punjači za tvrtke, javnu infrastrukturu i dom.',
-                'AC and DC chargers for business, public infrastructure, and home.'
-              )}
-            </p>
-
-            <div className="flex flex-wrap gap-4">
-              <Button size="lg" variant="secondary" asChild>
-                <a href="#products" className="gap-2">
-                  {t('Pogledaj proizvode', 'View Products')}
-                  <ArrowRight size={18} />
-                </a>
-              </Button>
-              <Button size="lg" variant="outline" className="border-primary-foreground/30 text-foreground bg-primary-foreground hover:bg-primary-foreground/90" asChild>
-                <a href="#contact">
-                  {t('Kontaktirajte nas', 'Contact Us')}
-                </a>
-              </Button>
-            </div>
-
-            {/* Stats */}
-            <div className="grid grid-cols-3 gap-6 mt-12 pt-8 border-t border-primary-foreground/20">
-              <div>
-                <div className="text-3xl font-bold text-accent">22+</div>
-                <div className="text-sm text-primary-foreground/70">
-                  {t('Godina međunarodnog iskustva', 'Years of International Experience')}
-                </div>
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-accent">500+</div>
-                <div className="text-sm text-primary-foreground/70">
-                  {t('Suradnika', 'Partners')}
-                </div>
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-accent">100+</div>
-                <div className="text-sm text-primary-foreground/70">
-                  {t('Patenata', 'Patents')}
-                </div>
-              </div>
-            </div>
+      <div className="container mx-auto px-4 pt-28 pb-20 relative z-10">
+        <div className="max-w-3xl">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-foreground/10 backdrop-blur-sm mb-8">
+            <div className="w-2 h-2 rounded-full bg-accent animate-pulse" />
+            <span className="text-sm font-medium text-primary-foreground/90">
+              {t('Kompletno EV rješenje za Hrvatsku', 'Complete EV Solution for Croatia')}
+            </span>
           </div>
 
-          {/* Right Content - EV Illustration */}
-          <div className="relative hidden lg:block">
-            <div className="relative w-full aspect-square max-w-lg mx-auto">
-              {/* Battery/EV Graphic */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-64 h-80 rounded-3xl bg-gradient-to-b from-primary-foreground/20 to-primary-foreground/5 backdrop-blur-sm border border-primary-foreground/20 flex flex-col items-center justify-center gap-4 p-6">
-                  <div className="w-20 h-8 rounded-full bg-accent/30" />
-                  <div className="flex-1 w-full rounded-2xl bg-gradient-to-t from-accent via-accent/60 to-transparent relative overflow-hidden">
-                    <div className="absolute bottom-0 left-0 right-0 h-3/4 bg-accent animate-pulse" />
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <Zap size={48} className="text-primary-foreground drop-shadow-lg" />
-                    </div>
-                  </div>
-                  <div className="text-primary-foreground font-bold text-lg">100%</div>
-                </div>
-              </div>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-[1.1] text-primary-foreground mb-6">
+            {t('Pokrenite svoj', 'Start Your')}
+            <br />
+            <span className="text-accent">
+              {t('EV punjački biznis', 'EV Charging Business')}
+            </span>
+          </h1>
 
-              {/* Floating elements */}
-              <div className="absolute top-10 right-10 w-16 h-16 rounded-2xl bg-accent/20 backdrop-blur-sm flex items-center justify-center animate-bounce">
-                <Zap size={24} className="text-accent" />
+          <p className="text-lg md:text-xl text-primary-foreground/75 mb-10 max-w-xl leading-relaxed">
+            {t(
+              'Instalacija, upravljanje i monetizacija punionica za električna vozila. Od planiranja do zarade — sve na jednom mjestu.',
+              'Installation, management, and monetization of EV charging stations. From planning to revenue — all in one place.'
+            )}
+          </p>
+
+          <div className="flex flex-wrap gap-4 mb-16">
+            <Button size="lg" variant="secondary" className="gap-2 text-base h-13 px-8" asChild>
+              <a href="#contact">
+                {t('Zatražite ponudu', 'Get an Offer')}
+                <ArrowRight size={18} />
+              </a>
+            </Button>
+            <Button size="lg" variant="outline" className="gap-2 text-base h-13 px-8 border-primary-foreground/25 text-primary-foreground bg-primary-foreground/10 hover:bg-primary-foreground/20" asChild>
+              <a href="#monetization">
+                <Calculator size={18} />
+                {t('ROI kalkulator', 'ROI Calculator')}
+              </a>
+            </Button>
+          </div>
+
+          {/* Trust bar */}
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 pt-8 border-t border-primary-foreground/15">
+            {[
+              { value: '150+', label: t('Instaliranih stanica', 'Stations Installed') },
+              { value: '22+', label: t('Godina iskustva', 'Years Experience') },
+              { value: '99.5%', label: t('Uptime', 'Uptime') },
+              { value: '24/7', label: t('Podrška', 'Support') },
+            ].map((stat, i) => (
+              <div key={i}>
+                <div className="text-2xl md:text-3xl font-bold text-accent">{stat.value}</div>
+                <div className="text-sm text-primary-foreground/60">{stat.label}</div>
               </div>
-              <div className="absolute bottom-20 left-0 w-20 h-20 rounded-full bg-primary-foreground/10 backdrop-blur-sm" />
-            </div>
+            ))}
           </div>
         </div>
       </div>
