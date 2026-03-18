@@ -1,4 +1,4 @@
-import { ClipboardCheck, Wrench, MonitorSmartphone, TrendingUp } from 'lucide-react';
+import { ClipboardCheck, Wrench, MonitorSmartphone, Banknote } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 const Process = () => {
@@ -8,37 +8,37 @@ const Process = () => {
     {
       icon: ClipboardCheck,
       step: '01',
-      title: t('Konzultacija', 'Consultation'),
+      title: t('Prijavite lokaciju', 'Submit Location'),
       description: t(
-        'Analiziramo vašu lokaciju, promet i potrebe te predlažemo optimalno rješenje.',
-        'We analyze your location, traffic, and needs to propose the optimal solution.'
+        'Ispunite kratki obrazac. Mi evaluiramo vašu lokaciju i predlažemo optimalan broj punjača — besplatno.',
+        'Fill out a short form. We evaluate your location and propose the optimal number of chargers — for free.'
       ),
     },
     {
       icon: Wrench,
       step: '02',
-      title: t('Instalacija', 'Installation'),
+      title: t('Instalacija na naš trošak', 'We Install at Our Cost'),
       description: t(
-        'Naš tim obavlja kompletnu instalaciju — od elektro priključka do puštanja u rad.',
-        'Our team handles the complete installation — from electrical connection to commissioning.'
+        'Naš tim obavlja kompletnu instalaciju — od elektro priključka do puštanja u rad. Vi ne plaćate ništa.',
+        'Our team handles the complete installation — from electrical connection to commissioning. You pay nothing.'
       ),
     },
     {
       icon: MonitorSmartphone,
       step: '03',
-      title: t('Aktivacija platforme', 'Platform Activation'),
+      title: t('Mi upravljamo svime', 'We Manage Everything'),
       description: t(
-        'Povezujemo punionicu s našom platformom — mobilna app, dashboard, naplata.',
-        'We connect the charger to our platform — mobile app, dashboard, billing.'
+        'Održavanje, naplata, korisnička podrška, ažuriranje softvera — sve je na nama.',
+        'Maintenance, billing, customer support, software updates — it\'s all on us.'
       ),
     },
     {
-      icon: TrendingUp,
+      icon: Banknote,
       step: '04',
-      title: t('Zarađujete', 'You Earn'),
+      title: t('Vi zarađujete', 'You Earn'),
       description: t(
-        'Punionica počinje zarađivati. Mi brinemo o održavanju i podršci 24/7.',
-        'The charger starts earning. We handle maintenance and 24/7 support.'
+        'Primajte mjesečnu rentu ili udio u prihodu. Bez rizika, bez brige.',
+        'Receive monthly rent or revenue share. No risk, no hassle.'
       ),
     },
   ];
@@ -52,8 +52,8 @@ const Process = () => {
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
             {t(
-              'Od prvog kontakta do zarade — u 4 jednostavna koraka.',
-              'From first contact to revenue — in 4 simple steps.'
+              '4 koraka do zarade — bez ikakvog ulaganja s vaše strane.',
+              '4 steps to revenue — with zero investment on your part.'
             )}
           </p>
         </div>
@@ -61,7 +61,6 @@ const Process = () => {
         <div className="grid md:grid-cols-4 gap-6">
           {steps.map((step, i) => (
             <div key={i} className="relative text-center group">
-              {/* Connector line */}
               {i < steps.length - 1 && (
                 <div className="hidden md:block absolute top-10 left-[60%] w-[80%] h-0.5 bg-border z-0" />
               )}
@@ -73,6 +72,16 @@ const Process = () => {
               <p className="text-sm text-muted-foreground">{step.description}</p>
             </div>
           ))}
+        </div>
+
+        {/* No cost emphasis */}
+        <div className="mt-12 text-center">
+          <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-accent/10 border border-accent/20">
+            <span className="text-2xl font-bold text-accent">0 €</span>
+            <span className="text-foreground font-medium">
+              {t('ulaganja s vaše strane', 'investment on your part')}
+            </span>
+          </div>
         </div>
       </div>
     </section>

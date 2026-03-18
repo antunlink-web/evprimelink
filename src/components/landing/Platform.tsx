@@ -1,4 +1,4 @@
-import { Smartphone, LayoutDashboard, MapPin, CreditCard, BarChart3, Users } from 'lucide-react';
+import { Smartphone, LayoutDashboard, MapPin, CreditCard, BarChart3, Wrench } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 const Platform = () => {
@@ -12,44 +12,40 @@ const Platform = () => {
 
   const dashboardFeatures = [
     { icon: BarChart3, label: t('Analitika i prihodi', 'Analytics & Revenue') },
-    { icon: Users, label: t('Upravljanje korisnicima', 'User Management') },
+    { icon: Wrench, label: t('Status i održavanje', 'Status & Maintenance') },
     { icon: LayoutDashboard, label: t('Real-time monitoring', 'Real-time Monitoring') },
   ];
 
   return (
-    <section id="platform" className="py-20 bg-secondary/30">
+    <section id="platform" className="py-20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-14">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            {t('Softverska platforma', 'Software Platform')}
+            {t('Pametna platforma', 'Smart Platform')}
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
             {t(
-              'Mobilna aplikacija za korisnike i dashboard za vlasnike lokacija. Sve pod kontrolom.',
-              'Mobile app for users and dashboard for location owners. Everything under control.'
+              'Sve se upravlja kroz naš softver. Korisnici koriste aplikaciju, a vi pratite prihode na dashboardu.',
+              'Everything is managed through our software. Users use the app, and you track revenue on the dashboard.'
             )}
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* Mobile App */}
           <div>
             <div className="flex items-center gap-3 mb-6">
               <div className="w-10 h-10 rounded-xl gradient-primary flex items-center justify-center">
                 <Smartphone size={20} className="text-primary-foreground" />
               </div>
-              <h3 className="text-2xl font-bold text-foreground">
-                {t('Mobilna aplikacija', 'Mobile App')}
-              </h3>
+              <div>
+                <h3 className="text-xl font-bold text-foreground">
+                  {t('Mobilna aplikacija', 'Mobile App')}
+                </h3>
+                <p className="text-sm text-muted-foreground">{t('Za vozače EV-a', 'For EV drivers')}</p>
+              </div>
             </div>
-            <p className="text-muted-foreground mb-8">
-              {t(
-                'Korisnici pronalaze punionice, pokreću punjenje i plaćaju — sve kroz jednu aplikaciju.',
-                'Users find chargers, start charging, and pay — all through one app.'
-              )}
-            </p>
 
-            {/* Mock phone UI */}
             <div className="bg-card rounded-3xl border border-border shadow-xl p-6 max-w-sm mx-auto lg:mx-0">
               <div className="flex items-center justify-between mb-6">
                 <div className="text-sm font-semibold text-foreground">Primelink</div>
@@ -80,24 +76,19 @@ const Platform = () => {
               <div className="w-10 h-10 rounded-xl gradient-primary flex items-center justify-center">
                 <LayoutDashboard size={20} className="text-primary-foreground" />
               </div>
-              <h3 className="text-2xl font-bold text-foreground">
-                {t('Dashboard za vlasnike', 'Owner Dashboard')}
-              </h3>
+              <div>
+                <h3 className="text-xl font-bold text-foreground">
+                  {t('Partner dashboard', 'Partner Dashboard')}
+                </h3>
+                <p className="text-sm text-muted-foreground">{t('Za vlasnike lokacija', 'For location owners')}</p>
+              </div>
             </div>
-            <p className="text-muted-foreground mb-8">
-              {t(
-                'Pratite prihode, analizirajte korištenje i upravljajte cijenama u realnom vremenu.',
-                'Track revenue, analyze usage, and manage pricing in real time.'
-              )}
-            </p>
 
-            {/* Mock dashboard UI */}
             <div className="bg-card rounded-3xl border border-border shadow-xl p-6">
               <div className="flex items-center justify-between mb-6">
                 <div className="text-sm font-semibold text-foreground">{t('Pregled prihoda', 'Revenue Overview')}</div>
                 <div className="text-xs text-muted-foreground">{t('Zadnjih 30 dana', 'Last 30 days')}</div>
               </div>
-              {/* Revenue chart mock */}
               <div className="flex items-end gap-1 h-32 mb-6">
                 {[40, 55, 35, 70, 60, 80, 65, 90, 75, 85, 95, 88].map((h, i) => (
                   <div key={i} className="flex-1 rounded-t-sm bg-primary/20 relative" style={{ height: `${h}%` }}>
@@ -107,8 +98,8 @@ const Platform = () => {
               </div>
               <div className="grid grid-cols-2 gap-3 mb-4">
                 <div className="p-3 rounded-xl bg-primary/5 text-center">
-                  <div className="text-lg font-bold text-primary">€2,340</div>
-                  <div className="text-xs text-muted-foreground">{t('Mjesečni prihod', 'Monthly Revenue')}</div>
+                  <div className="text-lg font-bold text-primary">€840</div>
+                  <div className="text-xs text-muted-foreground">{t('Vaš mjesečni prihod', 'Your Monthly Income')}</div>
                 </div>
                 <div className="p-3 rounded-xl bg-accent/10 text-center">
                   <div className="text-lg font-bold text-accent">1,280</div>
