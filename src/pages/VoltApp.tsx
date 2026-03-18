@@ -217,7 +217,7 @@ const VoltAppContent = () => {
                   </div>
                 </div>
                 <div className="flex justify-center lg:justify-end">
-                  <img src={voltappCta} alt="VoltApp" className="w-64 md:w-80 drop-shadow-2xl" />
+                  <img src={voltappCta} alt="VoltAPP" className="w-64 md:w-80 drop-shadow-2xl" />
                 </div>
               </div>
             </div>

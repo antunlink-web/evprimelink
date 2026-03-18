@@ -17,7 +17,7 @@ const Header = () => {
     { href: '#platform', label: t('Platforma', 'Platform') },
     { href: '#revenue', label: t('Zarada', 'Revenue') },
     { href: '#about', label: t('O nama', 'About') },
-    { href: '/voltapp', label: 'VoltApp', isRoute: true },
+    { href: '/voltapp', label: 'VoltAPP', isRoute: true },
   ];
 
   const renderNavLink = (link: { href: string; label: string; isRoute?: boolean }, onClick?: () => void) => {
