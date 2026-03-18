@@ -41,11 +41,11 @@ const VoltAppContent = () => {
           <div className="container mx-auto px-4 relative z-10">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
-                <img src={voltappLogo} alt="VoltApp" className="h-16 md:h-20 mb-4 object-contain" />
+                <img src={voltappLogo} alt="VoltAPP" className="h-16 md:h-20 mb-4 object-contain" />
                 <p className="text-lg md:text-xl text-primary-foreground/80 mb-8 max-w-lg">
                   {t(
-                    'VoltApp je vaš pametni pratilac za jednostavno punjenje električnih vozila. Pronađite, punite i plaćajte — sve u jednoj aplikaciji.',
-                    'VoltApp is your smart companion for effortless electric vehicle charging. Find, charge, and pay — all in one app.'
+                     'VoltAPP je vaš pametni pratilac za jednostavno punjenje električnih vozila. Pronađite, punite i plaćajte — sve u jednoj aplikaciji.',
+                     'VoltAPP is your smart companion for effortless electric vehicle charging. Find, charge, and pay — all in one app.'
                   )}
                 </p>
                 <div className="flex flex-wrap gap-3">
@@ -65,7 +65,7 @@ const VoltAppContent = () => {
               </div>
 
               <div className="flex justify-center lg:justify-end">
-                <img src={voltappHero} alt="VoltApp" className="w-72 md:w-80 lg:w-96 drop-shadow-2xl" />
+                <img src={voltappHero} alt="VoltAPP" className="w-72 md:w-80 lg:w-96 drop-shadow-2xl" />
               </div>
             </div>
           </div>
@@ -217,7 +217,7 @@ const VoltAppContent = () => {
                   </div>
                 </div>
                 <div className="flex justify-center lg:justify-end">
-                  <img src={voltappCta} alt="VoltApp" className="w-64 md:w-80 drop-shadow-2xl" />
+                  <img src={voltappCta} alt="VoltAPP" className="w-64 md:w-80 drop-shadow-2xl" />
                 </div>
               </div>
             </div>
