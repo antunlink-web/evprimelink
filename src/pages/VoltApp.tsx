@@ -64,7 +64,7 @@ const VoltAppContent = () => {
               </div>
 
               <div className="flex justify-center lg:justify-end">
-                <img src={voltappMap} alt="VoltApp" className="w-64 md:w-72 lg:w-80 drop-shadow-2xl" />
+                <img src={voltappMap} alt="VoltApp" className="w-72 md:w-80 lg:w-96 drop-shadow-2xl" />
               </div>
             </div>
           </div>
@@ -75,7 +75,7 @@ const VoltAppContent = () => {
           <div className="container mx-auto px-4">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="flex justify-center lg:justify-start order-2 lg:order-1">
-                <img src={voltappMap} alt="Station Finder" className="w-56 md:w-64 drop-shadow-xl" />
+                <img src={voltappMap} alt="Station Finder" className="w-64 md:w-80 drop-shadow-xl" />
               </div>
               <div className="order-1 lg:order-2">
                 <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
@@ -130,7 +130,7 @@ const VoltAppContent = () => {
                 </p>
               </div>
               <div className="flex justify-center lg:justify-end">
-                <img src={voltappCharging} alt="Energy Insights" className="w-56 md:w-64 drop-shadow-xl" />
+                <img src={voltappCharging} alt="Energy Insights" className="w-64 md:w-80 drop-shadow-xl" />
               </div>
             </div>
           </div>
@@ -141,7 +141,7 @@ const VoltAppContent = () => {
           <div className="container mx-auto px-4">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="flex justify-center lg:justify-start order-2 lg:order-1">
-                <img src={voltappTap} alt="Tap to Charge" className="w-56 md:w-64 drop-shadow-xl" />
+                <img src={voltappTap} alt="Tap to Charge" className="w-64 md:w-80 drop-shadow-xl" />
               </div>
               <div className="order-1 lg:order-2">
                 <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
@@ -161,12 +161,12 @@ const VoltAppContent = () => {
                   )}
                 </p>
                 <div className="flex gap-4 mt-6">
-                  <div className="flex items-center gap-2 px-4 py-2 rounded-xl bg-primary/10">
-                    <QrCode size={20} className="text-primary" />
-                    <span className="text-sm font-medium text-foreground">QR Scan</span>
+                  <div className="flex items-center gap-2 px-5 py-3 rounded-xl bg-primary/10">
+                    <QrCode size={28} className="text-primary" />
+                    <span className="text-base font-medium text-foreground">QR Scan</span>
                   </div>
-                  <div className="flex items-center gap-2 px-4 py-2 rounded-xl bg-primary/10">
-                    <Nfc size={20} className="text-primary" />
+                  <div className="flex items-center gap-2 px-5 py-3 rounded-xl bg-primary/10">
+                    <Nfc size={28} className="text-primary" />
                     <span className="text-sm font-medium text-foreground">NFC</span>
                   </div>
                 </div>
@@ -216,7 +216,7 @@ const VoltAppContent = () => {
                   </div>
                 </div>
                 <div className="flex justify-center lg:justify-end">
-                  <img src={voltappCharging} alt="VoltApp" className="w-56 md:w-64 drop-shadow-2xl" />
+                  <img src={voltappCharging} alt="VoltApp" className="w-64 md:w-80 drop-shadow-2xl" />
                 </div>
               </div>
             </div>
