@@ -44,8 +44,8 @@ const VoltAppContent = () => {
                 <img src={voltappLogo} alt="VoltAPP" className="h-16 md:h-20 mb-4 object-contain" />
                 <p className="text-lg md:text-xl text-primary-foreground/80 mb-8 max-w-lg">
                   {t(
-                    'VoltApp je vaš pametni pratilac za jednostavno punjenje električnih vozila. Pronađite, punite i plaćajte — sve u jednoj aplikaciji.',
-                    'VoltApp is your smart companion for effortless electric vehicle charging. Find, charge, and pay — all in one app.'
+                     'VoltAPP je vaš pametni pratilac za jednostavno punjenje električnih vozila. Pronađite, punite i plaćajte — sve u jednoj aplikaciji.',
+                     'VoltAPP is your smart companion for effortless electric vehicle charging. Find, charge, and pay — all in one app.'
                   )}
                 </p>
                 <div className="flex flex-wrap gap-3">
