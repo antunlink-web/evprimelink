@@ -161,12 +161,12 @@ const VoltAppContent = () => {
                   )}
                 </p>
                 <div className="flex gap-4 mt-6">
-                  <div className="flex items-center gap-2 px-4 py-2 rounded-xl bg-primary/10">
-                    <QrCode size={20} className="text-primary" />
-                    <span className="text-sm font-medium text-foreground">QR Scan</span>
+                  <div className="flex items-center gap-2 px-5 py-3 rounded-xl bg-primary/10">
+                    <QrCode size={28} className="text-primary" />
+                    <span className="text-base font-medium text-foreground">QR Scan</span>
                   </div>
-                  <div className="flex items-center gap-2 px-4 py-2 rounded-xl bg-primary/10">
-                    <Nfc size={20} className="text-primary" />
+                  <div className="flex items-center gap-2 px-5 py-3 rounded-xl bg-primary/10">
+                    <Nfc size={28} className="text-primary" />
                     <span className="text-sm font-medium text-foreground">NFC</span>
                   </div>
                 </div>
