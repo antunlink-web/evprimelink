@@ -73,6 +73,18 @@ const Hero = () => {
             ))}
           </div>
         </div>
+
+          {/* Right - EV Car */}
+          <div className="hidden lg:flex items-center justify-center relative">
+            <img
+              src={heroEvCar}
+              alt="Electric Vehicle"
+              className="w-full max-w-lg drop-shadow-2xl"
+            />
+            {/* Glow effect behind car */}
+            <div className="absolute inset-0 bg-accent/10 blur-3xl rounded-full scale-75 -z-10" />
+          </div>
+        </div>
       </div>
 
       <div className="absolute bottom-0 left-0 right-0">
