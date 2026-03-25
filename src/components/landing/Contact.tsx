@@ -72,17 +72,17 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="py-20">
+    <section id="contact" className="py-24">
       <div className="container mx-auto px-4">
         {/* CTA Banner */}
         <div className="gradient-hero rounded-3xl p-8 md:p-12 mb-16 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            {t('Besplatna evaluacija lokacije', 'Free Location Evaluation')}
+            {t('Saznajte koliko možete zaraditi', 'Find Out How Much You Can Earn')}
           </h2>
           <p className="text-foreground/70 max-w-xl mx-auto mb-6 text-lg">
             {t(
-              'Prijavite svoju lokaciju i saznajte koliko možete zarađivati — bez ikakve obveze.',
-              'Submit your location and find out how much you can earn — with no obligation.'
+              'Prijavite svoju lokaciju i dobijte besplatnu procjenu zarade — bez ikakve obveze.',
+              'Submit your location and get a free earnings estimate — with no obligation.'
             )}
           </p>
           <div className="flex flex-wrap justify-center gap-3">
@@ -102,7 +102,7 @@ const Contact = () => {
           {/* Form */}
           <div className="bg-card rounded-2xl p-8 shadow-lg border border-border">
             <h3 className="text-xl font-bold text-foreground mb-6">
-              {t('Prijavite lokaciju', 'Submit Your Location')}
+              {t('Provjerite svoju lokaciju', 'Check Your Location')}
             </h3>
             <form onSubmit={handleSubmit} className="space-y-5">
               <div className="grid sm:grid-cols-2 gap-4">
@@ -149,7 +149,7 @@ const Contact = () => {
                 ) : (
                   <>
                     <Send size={18} />
-                    {t('Prijavite lokaciju', 'Submit Location')}
+                    {t('Zatražite procjenu zarade', 'Request Earnings Estimate')}
                   </>
                 )}
               </Button>
@@ -179,6 +179,20 @@ const Contact = () => {
                   </div>
                 </div>
               ))}
+            </div>
+
+            {/* Local trust */}
+            <div className="mt-10 p-6 bg-card rounded-2xl border border-border">
+              <p className="text-sm text-muted-foreground mb-3">
+                {t('Aktivni u gradovima:', 'Active in cities:')}
+              </p>
+              <div className="flex flex-wrap gap-2">
+                {['Zagreb', 'Split', 'Rijeka'].map((city) => (
+                  <span key={city} className="px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium">
+                    {city}
+                  </span>
+                ))}
+              </div>
             </div>
           </div>
         </div>

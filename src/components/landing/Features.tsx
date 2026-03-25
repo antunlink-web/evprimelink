@@ -7,13 +7,13 @@ const Features = () => {
   const features = [
     {
       icon: Banknote,
-      title: t('Dodatni prihod', 'Extra Income'),
-      description: t('Fiksna renta ili udio u prihodu', 'Fixed rent or revenue share'),
+      title: t('Pasivan prihod', 'Passive Income'),
+      description: t('Do 500€+ mjesečno po lokaciji', 'Up to €500+/month per location'),
     },
     {
       icon: Users,
       title: t('Više posjetitelja', 'More Visitors'),
-      description: t('EV vozači biraju lokacije s punjačima', 'EV drivers choose locations with chargers'),
+      description: t('EV vozači ciljano biraju lokacije s punjačima', 'EV drivers actively choose locations with chargers'),
     },
     {
       icon: Leaf,
@@ -22,8 +22,8 @@ const Features = () => {
     },
     {
       icon: Clock,
-      title: t('Dulje zadržavanje', 'Longer Stay'),
-      description: t('Kupci ostaju dok se auto puni', 'Customers stay while their car charges'),
+      title: t('Bez brige', 'Zero Hassle'),
+      description: t('Mi upravljamo svime — 24/7', 'We manage everything — 24/7'),
     },
   ];
 
