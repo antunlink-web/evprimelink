@@ -42,8 +42,8 @@ const VoltAppContent = () => {
           <div className="container mx-auto px-4 relative z-10">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
-                <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-foreground mb-4 flex items-center">
-                   V<img src={voltappBolt} alt="O" className="inline-block h-[1.1em] -mx-[0.05em] relative top-[0.05em]" />LT<span className="text-primary">APP</span>
+                <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-foreground mb-4 flex items-center tracking-tight">
+                   V<img src={voltappBolt} alt="O" className="inline-block h-[1.1em] -mx-[0.08em] relative top-[0.05em]" />LT<span className="text-primary">APP</span>
                  </h1>
                 <p className="text-lg md:text-xl text-foreground/70 mb-8 max-w-lg">
                   {t(
