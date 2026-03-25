@@ -3,7 +3,7 @@ import Header from '@/components/landing/Header';
 import Hero from '@/components/landing/Hero';
 import Features from '@/components/landing/Features';
 import Process from '@/components/landing/Process';
-import ROICalculator from '@/components/landing/ROICalculator';
+import EarningsEstimate from '@/components/landing/EarningsEstimate';
 import Segments from '@/components/landing/Segments';
 import RevenueModels from '@/components/landing/RevenueModels';
 import Trust from '@/components/landing/Trust';
@@ -23,7 +23,7 @@ const Index = () => {
           <Hero />
           <Features />
           <Process />
-          <ROICalculator />
+          <EarningsEstimate />
           <Segments />
           <RevenueModels />
           <Trust />
