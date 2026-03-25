@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { LanguageProvider } from '@/contexts/LanguageContext';
 import Header from '@/components/landing/Header';
@@ -15,6 +16,10 @@ import voltappBolt from '@/assets/app/voltapp-bolt.png';
 
 const VoltAppContent = () => {
   const { t } = useLanguage();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="min-h-screen">
