@@ -101,8 +101,8 @@ const Platform = () => {
                   <div className="text-lg font-bold text-primary">€840</div>
                   <div className="text-xs text-muted-foreground">{t('Vaš mjesečni prihod', 'Your Monthly Income')}</div>
                 </div>
-                <div className="p-3 rounded-xl bg-accent/10 text-center">
-                  <div className="text-lg font-bold text-accent">1,280</div>
+                <div className="p-3 rounded-xl bg-primary/10 text-center">
+                  <div className="text-lg font-bold text-primary">1,280</div>
                   <div className="text-xs text-muted-foreground">{t('Sesija punjenja', 'Charging Sessions')}</div>
                 </div>
               </div>

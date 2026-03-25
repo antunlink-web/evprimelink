@@ -40,7 +40,7 @@ const WhyChooseUs = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-secondary/30">
+    <section id="about" className="py-20 bg-secondary/50">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
@@ -76,12 +76,12 @@ const WhyChooseUs = () => {
                   <div className="text-3xl font-bold text-primary mb-1">150+</div>
                   <div className="text-sm text-muted-foreground">{t('Aktivnih lokacija', 'Active Locations')}</div>
                 </div>
-                <div className="text-center p-5 rounded-xl bg-accent/10">
-                  <div className="text-3xl font-bold text-accent mb-1">99.5%</div>
+                <div className="text-center p-5 rounded-xl bg-primary/10">
+                  <div className="text-3xl font-bold text-primary mb-1">99.5%</div>
                   <div className="text-sm text-muted-foreground">{t('Uptime', 'Uptime')}</div>
                 </div>
-                <div className="text-center p-5 rounded-xl bg-accent/10">
-                  <div className="text-3xl font-bold text-accent mb-1">0 €</div>
+                <div className="text-center p-5 rounded-xl bg-primary/10">
+                  <div className="text-3xl font-bold text-primary mb-1">0 €</div>
                   <div className="text-sm text-muted-foreground">{t('Trošak za partnera', 'Cost for Partner')}</div>
                 </div>
                 <div className="text-center p-5 rounded-xl bg-primary/5">

@@ -30,7 +30,7 @@ const RevenueModels = () => {
   ];
 
   return (
-    <section id="revenue" className="py-20 bg-secondary/30">
+    <section id="revenue" className="py-20 bg-secondary/50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-14">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -54,8 +54,8 @@ const RevenueModels = () => {
                 </div>
                 <h3 className="text-2xl font-bold text-foreground mb-3">{model.title}</h3>
                 <p className="text-muted-foreground mb-6">{model.description}</p>
-                <div className="p-4 rounded-xl bg-accent/10 mb-4">
-                  <div className="text-sm font-bold text-accent mb-1">{model.highlight}</div>
+                <div className="p-4 rounded-xl bg-primary/10 mb-4">
+                  <div className="text-sm font-bold text-primary mb-1">{model.highlight}</div>
                   <div className="text-lg font-bold text-foreground">{model.example}</div>
                 </div>
               </CardContent>
