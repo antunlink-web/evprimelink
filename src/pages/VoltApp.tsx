@@ -64,9 +64,11 @@ const VoltAppContent = () => {
                       Google Play
                     </a>
                   </Button>
-                  <Button size="lg" variant="outline" className="gap-2 h-14 px-5 border-foreground/25 text-foreground hover:bg-foreground/10">
-                    <Smartphone size={18} />
-                    {t('Otvori u pregledniku', 'Open in Browser')}
+                  <Button size="lg" variant="outline" className="gap-2 h-14 px-5 border-foreground/25 text-foreground hover:bg-foreground/10" asChild>
+                    <a href="https://voltapp.si/" target="_blank" rel="noopener noreferrer">
+                      <Smartphone size={18} />
+                      {t('Otvori u pregledniku', 'Open in Browser')}
+                    </a>
                   </Button>
                 </div>
               </div>
@@ -221,9 +223,11 @@ const VoltAppContent = () => {
                         Google Play
                       </a>
                     </Button>
-                    <Button size="lg" variant="outline" className="gap-2 h-14 px-5 border-foreground/25 text-foreground hover:bg-foreground/10">
-                      <Smartphone size={18} />
-                      {t('U pregledniku', 'In Browser')}
+                    <Button size="lg" variant="outline" className="gap-2 h-14 px-5 border-foreground/25 text-foreground hover:bg-foreground/10" asChild>
+                      <a href="https://voltapp.si/" target="_blank" rel="noopener noreferrer">
+                        <Smartphone size={18} />
+                        {t('U pregledniku', 'In Browser')}
+                      </a>
                     </Button>
                   </div>
                 </div>
