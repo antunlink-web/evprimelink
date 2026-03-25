@@ -50,8 +50,8 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border/50">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          <Link to="/" className="flex items-center text-2xl font-bold text-foreground">
-            V<img src={voltappBolt} alt="O" className="inline-block h-[0.85em] -mx-[0.02em] relative top-[0.03em]" />LT<span className="text-primary">APP</span>
+          <Link to="/" className="flex items-center text-2xl font-bold text-foreground tracking-tight">
+            V<img src={voltappBolt} alt="O" className="inline-block h-[0.85em] -mx-[0.08em] relative top-[0.03em]" />LT<span className="text-primary">APP</span>
           </Link>
 
           <nav className="hidden lg:flex items-center gap-6">

@@ -9,8 +9,8 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
-            <a href="#" className="flex items-center mb-4 text-2xl font-bold text-foreground">
-              V<img src={voltappBolt} alt="O" className="inline-block h-[0.85em] -mx-[0.02em] relative top-[0.03em]" />LT<span className="text-primary">APP</span>
+            <a href="#" className="flex items-center mb-4 text-2xl font-bold text-foreground tracking-tight">
+              V<img src={voltappBolt} alt="O" className="inline-block h-[0.85em] -mx-[0.08em] relative top-[0.03em]" />LT<span className="text-primary">APP</span>
             </a>
             <p className="text-muted-foreground max-w-sm">
               {t(
