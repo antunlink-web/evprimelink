@@ -17,26 +17,26 @@ const Hero = () => {
       <div className="container mx-auto px-4 pt-28 pb-20 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
         <div>
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-foreground/10 backdrop-blur-sm mb-8">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 backdrop-blur-sm mb-8">
             <div className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-            <span className="text-sm font-medium text-primary-foreground/90">
+            <span className="text-sm font-medium text-foreground/80">
               {t('Bez ulaganja • Bez rizika • Samo zarada', 'No Investment • No Risk • Just Revenue')}
             </span>
           </div>
 
-          <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-[1.1] text-primary-foreground mb-6">
+           <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-[1.1] text-foreground mb-6">
             {t('Zarađujte od', 'Earn From')}
             <br />
             <span className="text-primary">
               {t('EV punjenja', 'EV Charging')}
             </span>
             <br />
-            <span className="text-primary-foreground/90">
+            <span className="text-foreground/70">
               {t('bez investicije', 'Without Investment')}
             </span>
           </h1>
 
-          <p className="text-lg md:text-xl text-primary-foreground/75 mb-10 max-w-xl leading-relaxed">
+          <p className="text-lg md:text-xl text-foreground/60 mb-10 max-w-xl leading-relaxed">
             {t(
               'Mi instaliramo, upravljamo i održavamo punionice na vašoj lokaciji. Vi dobivate dodatni prihod i više posjetitelja — bez ikakvog troška.',
               'We install, manage, and maintain chargers at your location. You get extra income and more visitors — at zero cost to you.'
@@ -44,13 +44,13 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-wrap gap-4 mb-16">
-            <Button size="lg" variant="secondary" className="gap-2 text-base h-13 px-8" asChild>
+            <Button size="lg" className="gap-2 text-base h-13 px-8" asChild>
               <a href="#contact">
                 {t('Postanite partner', 'Become a Partner')}
                 <ArrowRight size={18} />
               </a>
             </Button>
-            <Button size="lg" variant="outline" className="gap-2 text-base h-13 px-8 border-primary-foreground/25 text-primary-foreground bg-primary-foreground/10 hover:bg-primary-foreground/20" asChild>
+            <Button size="lg" variant="outline" className="gap-2 text-base h-13 px-8 border-foreground/25 text-foreground hover:bg-foreground/10" asChild>
               <a href="#contact">
                 <MapPin size={18} />
                 {t('Prijavite lokaciju', 'Submit Your Location')}
@@ -59,7 +59,7 @@ const Hero = () => {
           </div>
 
           {/* Trust bar */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 pt-8 border-t border-primary-foreground/15">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 pt-8 border-t border-foreground/15">
             {[
               { value: '0 €', label: t('Vaša investicija', 'Your Investment') },
               { value: '150+', label: t('Aktivnih lokacija', 'Active Locations') },
@@ -68,7 +68,7 @@ const Hero = () => {
             ].map((stat, i) => (
               <div key={i}>
                 <div className="text-2xl md:text-3xl font-bold text-primary">{stat.value}</div>
-                <div className="text-sm text-primary-foreground/60">{stat.label}</div>
+                <div className="text-sm text-foreground/50">{stat.label}</div>
               </div>
             ))}
           </div>

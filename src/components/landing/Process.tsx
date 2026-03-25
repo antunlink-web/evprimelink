@@ -65,7 +65,7 @@ const Process = () => {
                 <div className="hidden md:block absolute top-10 left-[60%] w-[80%] h-0.5 bg-border z-0" />
               )}
               <div className="relative z-10 mb-4 mx-auto w-20 h-20 rounded-2xl gradient-primary flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
-                <step.icon size={32} className="text-primary-foreground" />
+                <step.icon size={32} className="text-background" />
               </div>
               <div className="text-sm font-bold text-primary mb-2">{step.step}</div>
               <h3 className="text-lg font-bold text-foreground mb-2">{step.title}</h3>

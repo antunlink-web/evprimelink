@@ -1,5 +1,5 @@
 import { useLanguage } from '@/contexts/LanguageContext';
-import voltappLogo from '@/assets/app/voltapp-logo.png';
+import voltappBolt from '@/assets/app/voltapp-bolt.png';
 
 const Footer = () => {
   const { t } = useLanguage();
@@ -9,8 +9,8 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
-            <a href="#" className="flex items-center mb-4">
-              <img src={voltappLogo} alt="VoltAPP" className="h-12 w-auto" />
+            <a href="#" className="flex items-center mb-4 text-2xl font-bold text-foreground">
+              V<img src={voltappBolt} alt="O" className="inline-block h-[0.85em] -mx-[0.02em] relative top-[0.03em]" />LT<span className="text-primary">APP</span>
             </a>
             <p className="text-muted-foreground max-w-sm">
               {t(
