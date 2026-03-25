@@ -195,10 +195,10 @@ const VoltAppContent = () => {
 
               <div className="grid lg:grid-cols-2 gap-10 items-center relative z-10">
                 <div>
-                  <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-4">
+                  <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
                     {t('Preuzmite aplikaciju!', 'Download The App!')}
                   </h2>
-                  <p className="text-primary-foreground/80 text-lg mb-8 max-w-lg">
+                  <p className="text-foreground/70 text-lg mb-8 max-w-lg">
                     {t(
                       'Preuzmite kontrolu nad vašim EV punjenjem bilo gdje, bilo kada. Pratite sesije u stvarnom vremenu, nadzirite troškove i pronađite dostupne stanice jednim dodirom.',
                       'Take control of your EV charging experience anywhere, anytime. Track real-time sessions, monitor costs, and find available stations with a single tap.'
@@ -213,7 +213,7 @@ const VoltAppContent = () => {
                       <svg viewBox="0 0 24 24" className="w-5 h-5" fill="currentColor"><path d="M3 20.5V3.5C3 2.91 3.34 2.39 3.84 2.15L13.69 12L3.84 21.85C3.34 21.61 3 21.09 3 20.5ZM16.81 15.12L6.05 21.34L14.54 12.85L16.81 15.12ZM20.16 10.81C20.5 11.08 20.75 11.5 20.75 12C20.75 12.5 20.5 12.92 20.16 13.19L17.89 14.5L15.39 12L17.89 9.5L20.16 10.81ZM6.05 2.66L16.81 8.88L14.54 11.15L6.05 2.66Z"/></svg>
                       Google Play
                     </Button>
-                    <Button size="lg" variant="outline" className="gap-2 h-14 px-5 border-primary-foreground/25 text-primary-foreground bg-primary-foreground/10 hover:bg-primary-foreground/20">
+                    <Button size="lg" variant="outline" className="gap-2 h-14 px-5 border-foreground/25 text-foreground hover:bg-foreground/10">
                       <Smartphone size={18} />
                       {t('U pregledniku', 'In Browser')}
                     </Button>

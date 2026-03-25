@@ -65,7 +65,7 @@ const Segments = () => {
               <CardContent className="p-8">
                 <div className="flex items-start gap-5">
                   <div className="w-14 h-14 rounded-2xl gradient-primary flex items-center justify-center flex-shrink-0">
-                    <segment.icon size={28} className="text-primary-foreground" />
+                    <segment.icon size={28} className="text-background" />
                   </div>
                   <div className="flex-1">
                     <h3 className="text-xl font-bold text-foreground mb-2">{segment.title}</h3>

@@ -82,23 +82,23 @@ const Contact = () => {
       <div className="container mx-auto px-4">
         {/* CTA Banner */}
         <div className="gradient-hero rounded-3xl p-8 md:p-12 mb-16 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
             {t('Besplatna evaluacija lokacije', 'Free Location Evaluation')}
           </h2>
-          <p className="text-primary-foreground/80 max-w-xl mx-auto mb-6 text-lg">
+          <p className="text-foreground/70 max-w-xl mx-auto mb-6 text-lg">
             {t(
               'Prijavite svoju lokaciju i saznajte koliko možete zarađivati — bez ikakve obveze.',
               'Submit your location and find out how much you can earn — with no obligation.'
             )}
           </p>
           <div className="flex flex-wrap justify-center gap-3">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-foreground/10 text-primary-foreground text-sm">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-foreground/10 text-foreground text-sm">
               <ArrowRight size={14} /> {t('Odgovor u 24h', 'Response in 24h')}
             </div>
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-foreground/10 text-primary-foreground text-sm">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-foreground/10 text-foreground text-sm">
               <ArrowRight size={14} /> {t('Bez obveze', 'No obligation')}
             </div>
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-foreground/10 text-primary-foreground text-sm">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-foreground/10 text-foreground text-sm">
               <ArrowRight size={14} /> {t('Besplatno', 'Free')}
             </div>
           </div>
@@ -171,7 +171,7 @@ const Contact = () => {
               {contactInfo.map((item, index) => (
                 <div key={index} className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-lg gradient-primary flex items-center justify-center flex-shrink-0">
-                    <item.icon size={24} className="text-primary-foreground" />
+                    <item.icon size={24} className="text-background" />
                   </div>
                   <div>
                     <div className="text-sm text-muted-foreground mb-1">{item.label}</div>
