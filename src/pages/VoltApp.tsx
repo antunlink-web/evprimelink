@@ -17,7 +17,9 @@ import voltappBolt from '@/assets/app/voltapp-bolt.png';
 const VoltAppContent = () => {
   const { t } = useLanguage();
 
-  React.useEffect(() => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
     window.scrollTo(0, 0);
   }, []);
 
