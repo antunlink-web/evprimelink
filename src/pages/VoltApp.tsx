@@ -58,9 +58,11 @@ const VoltAppContent = () => {
                       App Store
                     </a>
                   </Button>
-                  <Button size="lg" variant="secondary" className="gap-2 h-14 px-5">
-                    <svg viewBox="0 0 24 24" className="w-5 h-5" fill="currentColor"><path d="M3 20.5V3.5C3 2.91 3.34 2.39 3.84 2.15L13.69 12L3.84 21.85C3.34 21.61 3 21.09 3 20.5ZM16.81 15.12L6.05 21.34L14.54 12.85L16.81 15.12ZM20.16 10.81C20.5 11.08 20.75 11.5 20.75 12C20.75 12.5 20.5 12.92 20.16 13.19L17.89 14.5L15.39 12L17.89 9.5L20.16 10.81ZM6.05 2.66L16.81 8.88L14.54 11.15L6.05 2.66Z"/></svg>
-                    Google Play
+                  <Button size="lg" variant="secondary" className="gap-2 h-14 px-5" asChild>
+                    <a href="https://play.google.com/store/apps/details?id=sl.volt.ev_charging" target="_blank" rel="noopener noreferrer">
+                      <svg viewBox="0 0 24 24" className="w-5 h-5" fill="currentColor"><path d="M3 20.5V3.5C3 2.91 3.34 2.39 3.84 2.15L13.69 12L3.84 21.85C3.34 21.61 3 21.09 3 20.5ZM16.81 15.12L6.05 21.34L14.54 12.85L16.81 15.12ZM20.16 10.81C20.5 11.08 20.75 11.5 20.75 12C20.75 12.5 20.5 12.92 20.16 13.19L17.89 14.5L15.39 12L17.89 9.5L20.16 10.81ZM6.05 2.66L16.81 8.88L14.54 11.15L6.05 2.66Z"/></svg>
+                      Google Play
+                    </a>
                   </Button>
                   <Button size="lg" variant="outline" className="gap-2 h-14 px-5 border-foreground/25 text-foreground hover:bg-foreground/10">
                     <Smartphone size={18} />
@@ -213,9 +215,11 @@ const VoltAppContent = () => {
                         App Store
                       </a>
                     </Button>
-                    <Button size="lg" variant="secondary" className="gap-2 h-14 px-5">
-                      <svg viewBox="0 0 24 24" className="w-5 h-5" fill="currentColor"><path d="M3 20.5V3.5C3 2.91 3.34 2.39 3.84 2.15L13.69 12L3.84 21.85C3.34 21.61 3 21.09 3 20.5ZM16.81 15.12L6.05 21.34L14.54 12.85L16.81 15.12ZM20.16 10.81C20.5 11.08 20.75 11.5 20.75 12C20.75 12.5 20.5 12.92 20.16 13.19L17.89 14.5L15.39 12L17.89 9.5L20.16 10.81ZM6.05 2.66L16.81 8.88L14.54 11.15L6.05 2.66Z"/></svg>
-                      Google Play
+                    <Button size="lg" variant="secondary" className="gap-2 h-14 px-5" asChild>
+                      <a href="https://play.google.com/store/apps/details?id=sl.volt.ev_charging" target="_blank" rel="noopener noreferrer">
+                        <svg viewBox="0 0 24 24" className="w-5 h-5" fill="currentColor"><path d="M3 20.5V3.5C3 2.91 3.34 2.39 3.84 2.15L13.69 12L3.84 21.85C3.34 21.61 3 21.09 3 20.5ZM16.81 15.12L6.05 21.34L14.54 12.85L16.81 15.12ZM20.16 10.81C20.5 11.08 20.75 11.5 20.75 12C20.75 12.5 20.5 12.92 20.16 13.19L17.89 14.5L15.39 12L17.89 9.5L20.16 10.81ZM6.05 2.66L16.81 8.88L14.54 11.15L6.05 2.66Z"/></svg>
+                        Google Play
+                      </a>
                     </Button>
                     <Button size="lg" variant="outline" className="gap-2 h-14 px-5 border-foreground/25 text-foreground hover:bg-foreground/10">
                       <Smartphone size={18} />
