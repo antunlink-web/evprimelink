@@ -1,4 +1,5 @@
-import { ClipboardCheck, Wrench, MonitorSmartphone, Banknote } from 'lucide-react';
+import { ClipboardCheck, Search, Wrench, Banknote, ArrowRight } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 const Process = () => {
@@ -10,41 +11,41 @@ const Process = () => {
       step: '01',
       title: t('Prijavite lokaciju', 'Submit Location'),
       description: t(
-        'Ispunite kratki obrazac. Mi evaluiramo vašu lokaciju i predlažemo optimalan broj punjača — besplatno.',
-        'Fill out a short form. We evaluate your location and propose the optimal number of chargers — for free.'
+        'Ispunite kratki obrazac s podacima o vašoj lokaciji.',
+        'Fill out a short form with your location details.'
+      ),
+    },
+    {
+      icon: Search,
+      step: '02',
+      title: t('Mi procjenjujemo potencijal', 'We Assess Potential'),
+      description: t(
+        'Analiziramo promet, pristupačnost i zaradu — besplatno.',
+        'We analyze traffic, accessibility and earnings — for free.'
       ),
     },
     {
       icon: Wrench,
-      step: '02',
-      title: t('Instalacija na naš trošak', 'We Install at Our Cost'),
-      description: t(
-        'Naš tim obavlja kompletnu instalaciju — od elektro priključka do puštanja u rad. Vi ne plaćate ništa.',
-        'Our team handles the complete installation — from electrical connection to commissioning. You pay nothing.'
-      ),
-    },
-    {
-      icon: MonitorSmartphone,
       step: '03',
-      title: t('Mi upravljamo svime', 'We Manage Everything'),
+      title: t('Instaliramo punionicu (0€ za vas)', 'We Install Chargers (€0 for you)'),
       description: t(
-        'Održavanje, naplata, korisnička podrška, ažuriranje softvera — sve je na nama.',
-        'Maintenance, billing, customer support, software updates — it\'s all on us.'
+        'Kompletna instalacija na naš trošak. Vi ne plaćate ništa.',
+        'Complete installation at our cost. You pay nothing.'
       ),
     },
     {
       icon: Banknote,
       step: '04',
-      title: t('Vi zarađujete', 'You Earn'),
+      title: t('Vi zarađujete mjesečno', 'You Earn Monthly'),
       description: t(
-        'Primajte mjesečnu rentu ili udio u prihodu. Bez rizika, bez brige.',
-        'Receive monthly rent or revenue share. No risk, no hassle.'
+        'Primajte pasivan prihod svaki mjesec — bez rizika i brige.',
+        'Receive passive income every month — no risk, no hassle.'
       ),
     },
   ];
 
   return (
-    <section id="process" className="py-20">
+    <section id="process" className="py-24">
       <div className="container mx-auto px-4">
         <div className="text-center mb-14">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -52,8 +53,8 @@ const Process = () => {
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
             {t(
-              '4 koraka do zarade — bez ikakvog ulaganja s vaše strane.',
-              '4 steps to revenue — with zero investment on your part.'
+              '4 jednostavna koraka do zarade — bez ikakvog ulaganja s vaše strane.',
+              '4 simple steps to revenue — with zero investment on your part.'
             )}
           </p>
         </div>
@@ -74,14 +75,13 @@ const Process = () => {
           ))}
         </div>
 
-        {/* No cost emphasis */}
         <div className="mt-12 text-center">
-          <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-primary/10 border border-primary/20">
-            <span className="text-2xl font-bold text-primary">0 €</span>
-            <span className="text-foreground font-medium">
-              {t('ulaganja s vaše strane', 'investment on your part')}
-            </span>
-          </div>
+          <Button size="lg" className="gap-2 h-14 px-8" asChild>
+            <a href="#contact">
+              {t('Provjerite svoju lokaciju', 'Check Your Location')}
+              <ArrowRight size={18} />
+            </a>
+          </Button>
         </div>
       </div>
     </section>
