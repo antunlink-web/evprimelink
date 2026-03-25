@@ -24,10 +24,10 @@ export default {
           foreground: "hsl(var(--primary-foreground))",
         },
         voltapp: {
-          blue: "hsl(var(--voltapp-blue))",
-          "blue-dark": "hsl(var(--voltapp-blue-dark))",
-          cyan: "hsl(var(--voltapp-cyan))",
+          gold: "hsl(var(--voltapp-gold))",
+          "gold-light": "hsl(var(--voltapp-gold-light))",
           navy: "hsl(var(--voltapp-navy))",
+          "navy-light": "hsl(var(--voltapp-navy-light))",
           light: "hsl(var(--voltapp-light))",
         },
         secondary: {

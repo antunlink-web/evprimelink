@@ -45,7 +45,7 @@ const Segments = () => {
   ];
 
   return (
-    <section id="locations" className="py-20 bg-secondary/30">
+    <section id="locations" className="py-20 bg-secondary/50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-14">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -70,7 +70,7 @@ const Segments = () => {
                   <div className="flex-1">
                     <h3 className="text-xl font-bold text-foreground mb-2">{segment.title}</h3>
                     <p className="text-muted-foreground mb-3">{segment.description}</p>
-                    <div className="inline-flex px-3 py-1 rounded-full bg-accent/10 text-accent text-sm font-semibold">
+                    <div className="inline-flex px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-semibold">
                       {segment.stat}
                     </div>
                   </div>

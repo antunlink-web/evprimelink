@@ -18,7 +18,7 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
         <div>
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-foreground/10 backdrop-blur-sm mb-8">
-            <div className="w-2 h-2 rounded-full bg-accent animate-pulse" />
+            <div className="w-2 h-2 rounded-full bg-primary animate-pulse" />
             <span className="text-sm font-medium text-primary-foreground/90">
               {t('Bez ulaganja • Bez rizika • Samo zarada', 'No Investment • No Risk • Just Revenue')}
             </span>
@@ -27,7 +27,7 @@ const Hero = () => {
           <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-[1.1] text-primary-foreground mb-6">
             {t('Zarađujte od', 'Earn From')}
             <br />
-            <span className="text-accent">
+            <span className="text-primary">
               {t('EV punjenja', 'EV Charging')}
             </span>
             <br />
@@ -67,7 +67,7 @@ const Hero = () => {
               { value: '99.5%', label: t('Uptime punionica', 'Charger Uptime') },
             ].map((stat, i) => (
               <div key={i}>
-                <div className="text-2xl md:text-3xl font-bold text-accent">{stat.value}</div>
+                <div className="text-2xl md:text-3xl font-bold text-primary">{stat.value}</div>
                 <div className="text-sm text-primary-foreground/60">{stat.label}</div>
               </div>
             ))}

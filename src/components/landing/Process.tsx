@@ -67,7 +67,7 @@ const Process = () => {
               <div className="relative z-10 mb-4 mx-auto w-20 h-20 rounded-2xl gradient-primary flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
                 <step.icon size={32} className="text-primary-foreground" />
               </div>
-              <div className="text-sm font-bold text-accent mb-2">{step.step}</div>
+              <div className="text-sm font-bold text-primary mb-2">{step.step}</div>
               <h3 className="text-lg font-bold text-foreground mb-2">{step.title}</h3>
               <p className="text-sm text-muted-foreground">{step.description}</p>
             </div>
@@ -76,8 +76,8 @@ const Process = () => {
 
         {/* No cost emphasis */}
         <div className="mt-12 text-center">
-          <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-accent/10 border border-accent/20">
-            <span className="text-2xl font-bold text-accent">0 €</span>
+          <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-primary/10 border border-primary/20">
+            <span className="text-2xl font-bold text-primary">0 €</span>
             <span className="text-foreground font-medium">
               {t('ulaganja s vaše strane', 'investment on your part')}
             </span>
