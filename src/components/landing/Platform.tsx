@@ -48,7 +48,7 @@ const Platform = () => {
 
             <div className="bg-card rounded-3xl border border-border shadow-xl p-6 max-w-sm mx-auto lg:mx-0">
               <div className="flex items-center justify-between mb-6">
-                <div className="text-sm font-semibold text-foreground">Primelink</div>
+                <div className="text-sm font-semibold text-foreground">VoltAPP</div>
                 <div className="flex gap-1">
                   <div className="w-2 h-2 rounded-full bg-accent" />
                   <div className="w-2 h-2 rounded-full bg-muted" />

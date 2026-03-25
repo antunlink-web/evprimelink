@@ -1,5 +1,5 @@
 import { useLanguage } from '@/contexts/LanguageContext';
-import primelinkLogo from '@/assets/primelink-logo.png';
+import voltappLogo from '@/assets/app/voltapp-logo.png';
 
 const Footer = () => {
   const { t } = useLanguage();
@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
             <a href="#" className="flex items-center mb-4">
-              <img src={primelinkLogo} alt="PrimeLink" className="h-12 w-auto brightness-0 invert" />
+              <img src={voltappLogo} alt="VoltAPP" className="h-12 w-auto brightness-0 invert" />
             </a>
             <p className="text-background/70 max-w-sm">
               {t(
@@ -41,7 +41,7 @@ const Footer = () => {
             <h4 className="font-semibold mb-4">{t('Kontakt', 'Contact')}</h4>
             <ul className="space-y-2 text-background/70">
               <li><a href="tel:+385915122888" className="hover:text-background transition-colors">+385 91 512 2888</a></li>
-              <li><a href="mailto:primelink@primelink.hr" className="hover:text-background transition-colors">primelink@primelink.hr</a></li>
+              <li><a href="mailto:info@voltapp.hr" className="hover:text-background transition-colors">info@voltapp.hr</a></li>
               <li>Tarska 26a, 10040 Zagreb</li>
             </ul>
           </div>
@@ -49,7 +49,7 @@ const Footer = () => {
 
         <div className="pt-8 border-t border-background/20 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-background/60 text-sm">
-            © 2026 Primelink. {t('Sva prava pridržana.', 'All rights reserved.')}
+            © 2026 VoltAPP. {t('Sva prava pridržana.', 'All rights reserved.')}
           </p>
           <div className="flex gap-6 text-sm">
             <a href="#" className="text-background/60 hover:text-background transition-colors">{t('Politika privatnosti', 'Privacy Policy')}</a>

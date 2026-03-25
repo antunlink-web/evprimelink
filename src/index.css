@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Primelink EV Charging - BatteryFly-inspired Blue Theme */
+/* VoltAPP EV Charging - Blue Theme */
 
 @layer base {
   :root {
@@ -36,12 +36,12 @@
 
     --radius: 0.75rem;
 
-    /* Custom Primelink colors */
-    --primelink-blue: 221 83% 53%;
-    --primelink-blue-dark: 221 83% 40%;
-    --primelink-cyan: 199 89% 48%;
-    --primelink-navy: 222 47% 11%;
-    --primelink-light: 210 20% 98%;
+    /* Custom VoltAPP colors */
+    --voltapp-blue: 221 83% 53%;
+    --voltapp-blue-dark: 221 83% 40%;
+    --voltapp-cyan: 199 89% 48%;
+    --voltapp-navy: 222 47% 11%;
+    --voltapp-light: 210 20% 98%;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
