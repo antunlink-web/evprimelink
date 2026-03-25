@@ -66,8 +66,8 @@ const Contact = () => {
     {
       icon: Mail,
       label: 'Email',
-      value: 'primelink@primelink.hr',
-      href: 'mailto:primelink@primelink.hr',
+      value: 'info@voltapp.hr',
+      href: 'mailto:info@voltapp.hr',
     },
     {
       icon: MapPin,

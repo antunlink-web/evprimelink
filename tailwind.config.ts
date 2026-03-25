@@ -23,12 +23,12 @@ export default {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
         },
-        primelink: {
-          blue: "hsl(var(--primelink-blue))",
-          "blue-dark": "hsl(var(--primelink-blue-dark))",
-          cyan: "hsl(var(--primelink-cyan))",
-          navy: "hsl(var(--primelink-navy))",
-          light: "hsl(var(--primelink-light))",
+        voltapp: {
+          blue: "hsl(var(--voltapp-blue))",
+          "blue-dark": "hsl(var(--voltapp-blue-dark))",
+          cyan: "hsl(var(--voltapp-cyan))",
+          navy: "hsl(var(--voltapp-navy))",
+          light: "hsl(var(--voltapp-light))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",

@@ -3,7 +3,7 @@ import { Menu, X } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/contexts/LanguageContext';
-import primelinkLogo from '@/assets/primelink-logo.png';
+import voltappLogo from '@/assets/app/voltapp-logo.png';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -33,7 +33,6 @@ const Header = () => {
         </Link>
       );
     }
-    // If not on home page, hash links should go to home first
     const href = isHome ? link.href : `/${link.href}`;
     return (
       <a
@@ -52,7 +51,7 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center">
-            <img src={primelinkLogo} alt="PrimeLink" className="h-10 w-auto" />
+            <img src={voltappLogo} alt="VoltAPP" className="h-10 w-auto" />
           </Link>
 
           <nav className="hidden lg:flex items-center gap-6">
