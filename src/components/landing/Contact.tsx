@@ -69,12 +69,6 @@ const Contact = () => {
       value: 'info@voltapp.hr',
       href: 'mailto:info@voltapp.hr',
     },
-    {
-      icon: MapPin,
-      label: t('Adresa', 'Address'),
-      value: 'Tarska 26a, 10040 Zagreb, Hrvatska',
-      href: undefined,
-    },
   ];
 
   return (

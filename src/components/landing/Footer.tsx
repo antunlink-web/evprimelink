@@ -42,7 +42,7 @@ const Footer = () => {
             <ul className="space-y-2 text-muted-foreground">
               <li><a href="tel:+385915122888" className="hover:text-primary transition-colors">+385 91 512 2888</a></li>
               <li><a href="mailto:info@voltapp.hr" className="hover:text-primary transition-colors">info@voltapp.hr</a></li>
-              <li>Tarska 26a, 10040 Zagreb</li>
+              
             </ul>
           </div>
         </div>
