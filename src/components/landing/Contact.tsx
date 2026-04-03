@@ -7,7 +7,7 @@ import { Label } from '@/components/ui/label';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useToast } from '@/hooks/use-toast';
 
-const WEB3FORMS_ACCESS_KEY = '4987abd8-8745-47a4-a916-13348be49533';
+const WEB3FORMS_ACCESS_KEY = '65b937ba-7a1f-4605-bd6e-51f19e97b7cd';
 
 const Contact = () => {
   const { t } = useLanguage();
