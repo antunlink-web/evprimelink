@@ -17,6 +17,7 @@ const Header = () => {
     { href: '#platform', label: t('Platforma', 'Platform') },
     { href: '#revenue', label: t('Zarada', 'Revenue') },
     { href: '#about', label: t('O nama', 'About') },
+    { href: '/oprema', label: t('Oprema', 'Equipment'), isRoute: true },
     { href: '/voltapp', label: 'VoltAPP', isRoute: true },
   ];
 
